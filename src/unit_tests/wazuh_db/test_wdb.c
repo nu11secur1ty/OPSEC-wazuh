@@ -405,8 +405,7 @@ void test_wdb_exec_stmt_error(void **state) {
 void test_wdb_exec_stmt_silent_success(void **state) {
     test_struct_t *data  = (test_struct_t *)*state;
 
-    //expect_sqlite3_step_call(SQLITE_DONE);
-    will_return(__wrap_wdb_step, SQLITE_DONE);
+    expect_sqlite3_step_call(SQLITE_DONE);
     
     int result = wdb_exec_stmt_silent(*data->wdb->stmt);
 
@@ -416,8 +415,7 @@ void test_wdb_exec_stmt_silent_success(void **state) {
 void test_wdb_exec_stmt_silent_invalid(void **state) {
     test_struct_t *data  = (test_struct_t *)*state;
 
-    //expect_sqlite3_step_call(SQLITE_ERROR);
-    will_return(__wrap_wdb_step, SQLITE_ERROR);
+    expect_sqlite3_step_call(SQLITE_ERROR);
     expect_string(__wrap__mdebug1, formatted_msg, "SQL statement execution failed");
 
     int result = wdb_exec_stmt_silent(*data->wdb->stmt);
