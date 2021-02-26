@@ -24,6 +24,7 @@
 #include "../wrappers/wazuh/shared/hash_op_wrappers.h"
 #include "../wrappers/wazuh/shared/debug_op_wrappers.h"
 #include "../wrappers/externals/sqlite/sqlite3_wrappers.h"
+#include "../wrappers/wazuh/wazuh_db/wdb_wrappers.h"
 
 typedef struct test_struct {
     wdb_t *wdb;
@@ -399,6 +400,73 @@ void test_wdb_exec_stmt_error(void **state) {
     cJSON_Delete(result);
 }
 
+/* Tests wdb_exec_stmt_silent */
+
+void test_wdb_exec_stmt_silent_success(void **state) {
+    test_struct_t *data  = (test_struct_t *)*state;
+
+    //expect_sqlite3_step_call(SQLITE_DONE);
+    will_return(__wrap_wdb_step, SQLITE_DONE);
+    
+    int result = wdb_exec_stmt_silent(*data->wdb->stmt);
+
+    assert_int_equal(result, OS_SUCCESS);
+}
+
+void test_wdb_exec_stmt_silent_invalid(void **state) {
+    test_struct_t *data  = (test_struct_t *)*state;
+
+    //expect_sqlite3_step_call(SQLITE_ERROR);
+    will_return(__wrap_wdb_step, SQLITE_ERROR);
+    expect_string(__wrap__mdebug1, formatted_msg, "SQL statement execution failed");
+
+    int result = wdb_exec_stmt_silent(*data->wdb->stmt);
+
+    assert_int_equal(result, OS_INVALID);
+}
+
+/* Tests wdb_init_stmt_in_cache */
+
+void test_wdb_init_stmt_in_cache_success(void **state) {
+    test_struct_t *data  = (test_struct_t *)*state;
+
+    will_return(__wrap_wdb_begin2, 1);
+    will_return(__wrap_wdb_stmt_cache, 1);
+
+    sqlite3_stmt* result = wdb_init_stmt_in_cache(data->wdb,WDB_STMT_FIM_LOAD);
+
+    assert_non_null(result);
+
+    free(result);
+}
+
+void test_wdb_init_stmt_in_cache_invalid_transaction(void **state) {
+    test_struct_t *data  = (test_struct_t *)*state;
+
+    will_return(__wrap_wdb_begin2, -1);
+    expect_string(__wrap__mdebug1, formatted_msg, "Cannot begin transaction");
+
+    sqlite3_stmt* result = wdb_init_stmt_in_cache(data->wdb, 0);
+
+    assert_null(result);
+
+    free(result);
+}
+
+void test_wdb_init_stmt_in_cache_invalid_statement(void **state) {
+    test_struct_t *data  = (test_struct_t *)*state;
+
+    will_return(__wrap_wdb_begin2, 1);
+    will_return(__wrap_wdb_stmt_cache, -1);
+    expect_string(__wrap__mdebug1, formatted_msg, "Cannot cache statement");
+
+    sqlite3_stmt* result = wdb_init_stmt_in_cache(data->wdb,WDB_STMT_SIZE);
+
+    assert_null(result);
+
+    free(result);
+}
+
 int main()
 {
     const struct CMUnitTest tests[] =
@@ -424,6 +492,13 @@ int main()
         cmocka_unit_test_setup_teardown(test_wdb_exec_stmt_sized_success_limited, setup_wdb, teardown_wdb),
         cmocka_unit_test_setup_teardown(test_wdb_exec_stmt_sized_invalid_statement, setup_wdb, teardown_wdb),
         cmocka_unit_test_setup_teardown(test_wdb_exec_stmt_sized_error, setup_wdb, teardown_wdb),
+        //wdb_exec_stmt_silent
+        cmocka_unit_test_setup_teardown(test_wdb_exec_stmt_silent_success, setup_wdb, teardown_wdb),
+        cmocka_unit_test_setup_teardown(test_wdb_exec_stmt_silent_invalid, setup_wdb, teardown_wdb),
+        //wdb_init_stmt_in_cache
+        cmocka_unit_test_setup_teardown(test_wdb_init_stmt_in_cache_success, setup_wdb, teardown_wdb),
+        cmocka_unit_test_setup_teardown(test_wdb_init_stmt_in_cache_invalid_transaction, setup_wdb, teardown_wdb),
+        cmocka_unit_test_setup_teardown(test_wdb_init_stmt_in_cache_invalid_statement, setup_wdb, teardown_wdb)
     };
 
     return cmocka_run_group_tests(tests, NULL, NULL);
