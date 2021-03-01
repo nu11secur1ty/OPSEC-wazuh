@@ -13,6 +13,8 @@ my $UP = `apt-get dist-upgrade -y`;
 # Need to install
 my $need_to_install = `apt-get install apache2 vim git curl default-jre default-jdk gcc -y`;
 
+print "Please wait...\n";
+
 # Deploy Siem
 my $action_= `curl -so ~/all-in-one-installation.sh https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/unattended-installation/all-in-one-installation.sh && bash ~/all-in-one-installation.sh`;
 
