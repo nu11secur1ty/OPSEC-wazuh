@@ -17,7 +17,6 @@ curl -so ~/all-in-one-installation.sh https://raw.githubusercontent.com/wazuh/wa
 
 # Reload
 rm -rf ~/all-in-one-installation.sh
-rm -rf /var/lib/elasticsearch
-rm -rf /etc/elasticsearch
+
 
   exit 0;
