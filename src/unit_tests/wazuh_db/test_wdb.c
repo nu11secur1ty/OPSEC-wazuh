@@ -99,6 +99,7 @@ void test_wdb_open_tasks_create_error(void **state)
     expect_value(__wrap_sqlite3_open_v2, flags, SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE);
     will_return(__wrap_sqlite3_open_v2, OS_INVALID);
 
+    will_return(__wrap_sqlite3_errmsg, "out of memory");
     expect_string(__wrap__mdebug1, formatted_msg, "Couldn't create SQLite database 'queue/tasks/tasks.db': out of memory");
     will_return(__wrap_sqlite3_close_v2, OS_SUCCESS);
 
@@ -150,6 +151,8 @@ void test_wdb_open_global_create_fail(void **state)
     will_return(__wrap_sqlite3_open_v2, NULL);
     expect_value(__wrap_sqlite3_open_v2, flags, SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE);
     will_return(__wrap_sqlite3_open_v2, OS_INVALID);
+
+    will_return(__wrap_sqlite3_errmsg, "out of memory");
     expect_string(__wrap__mdebug1, formatted_msg, "Couldn't create SQLite database 'queue/db/global.db': out of memory");
     will_return(__wrap_sqlite3_close_v2, OS_SUCCESS);
 
@@ -406,7 +409,7 @@ void test_wdb_exec_stmt_silent_success(void **state) {
     test_struct_t *data  = (test_struct_t *)*state;
 
     expect_sqlite3_step_call(SQLITE_DONE);
-    
+
     int result = wdb_exec_stmt_silent(*data->wdb->stmt);
 
     assert_int_equal(result, OS_SUCCESS);
@@ -428,41 +431,49 @@ void test_wdb_exec_stmt_silent_invalid(void **state) {
 void test_wdb_init_stmt_in_cache_success(void **state) {
     test_struct_t *data  = (test_struct_t *)*state;
 
-    will_return(__wrap_wdb_begin2, 1);
-    will_return(__wrap_wdb_stmt_cache, 1);
+    // wdb_begin2
+    will_return(__wrap_sqlite3_prepare_v2, SQLITE_OK);
+    expect_sqlite3_step_call(SQLITE_DONE);
+    will_return(__wrap_sqlite3_finalize, SQLITE_OK);
 
-    sqlite3_stmt* result = wdb_init_stmt_in_cache(data->wdb,WDB_STMT_FIM_LOAD);
+    // wdb_stmt_cache
+    will_return(__wrap_sqlite3_reset, SQLITE_OK);
+    will_return(__wrap_sqlite3_clear_bindings, SQLITE_OK);
+
+    sqlite3_stmt* result = wdb_init_stmt_in_cache(data->wdb, WDB_STMT_FIM_LOAD);
 
     assert_non_null(result);
-
-    free(result);
 }
 
 void test_wdb_init_stmt_in_cache_invalid_transaction(void **state) {
     test_struct_t *data  = (test_struct_t *)*state;
 
-    will_return(__wrap_wdb_begin2, -1);
+    // wdb_begin2
+    will_return(__wrap_sqlite3_prepare_v2, SQLITE_ERROR);
+    will_return(__wrap_sqlite3_errmsg, "ERROR MESSAGE");
+    expect_string(__wrap__mdebug1, formatted_msg, "sqlite3_prepare_v2(): ERROR MESSAGE");
     expect_string(__wrap__mdebug1, formatted_msg, "Cannot begin transaction");
 
     sqlite3_stmt* result = wdb_init_stmt_in_cache(data->wdb, 0);
 
     assert_null(result);
-
-    free(result);
 }
 
 void test_wdb_init_stmt_in_cache_invalid_statement(void **state) {
     test_struct_t *data  = (test_struct_t *)*state;
 
-    will_return(__wrap_wdb_begin2, 1);
-    will_return(__wrap_wdb_stmt_cache, -1);
+    // wdb_begin2
+    will_return(__wrap_sqlite3_prepare_v2, SQLITE_OK);
+    expect_sqlite3_step_call(SQLITE_DONE);
+    will_return(__wrap_sqlite3_finalize, SQLITE_OK);
+
+    // wdb_stmt_cache
+    expect_string(__wrap__merror, formatted_msg, "DB(000) SQL statement index (172) out of bounds");
     expect_string(__wrap__mdebug1, formatted_msg, "Cannot cache statement");
 
     sqlite3_stmt* result = wdb_init_stmt_in_cache(data->wdb,WDB_STMT_SIZE);
 
     assert_null(result);
-
-    free(result);
 }
 
 int main()
