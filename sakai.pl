@@ -4,7 +4,8 @@ use strict;
 use warnings;
 use diagnostics;
 
-# Packages
+# Packages and cleaning
+my $cleaning = `rm -rf /etc/apt/sources.list.d/*wazuh.list*`;
 my $fix_broken = `dpkg --configure -a`;
 my $pack_ = `apt-get update && apt-get upgrade -y`;
 
