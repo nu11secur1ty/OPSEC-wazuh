@@ -13,5 +13,7 @@ systemctl daemon-reload
 systemctl enable wazuh-manager
 systemctl start wazuh-manager
 systemctl status wazuh-manager 
+# Elastic
+apt install elasticsearch-oss opendistroforelasticsearch
 
   exit 0;
