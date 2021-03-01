@@ -17,5 +17,4 @@ curl -so ~/all-in-one-installation.sh https://raw.githubusercontent.com/wazuh/wa
 
 # Reload
 rm -rf ~/all-in-one-installation.sh
-telinit 6
   exit 0;
