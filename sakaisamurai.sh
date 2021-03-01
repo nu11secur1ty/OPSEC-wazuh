@@ -7,5 +7,8 @@ apt-get remove opendistroforelasticsearch-kibana -y
 apt-get remove --purge opendistroforelasticsearch-kibana -y
 rm -rf /var/lib/elasticsearch
 rm -rf /etc/elasticsearch
+rm -rf /etc/apt/sources.list.d/*wazuh*
+
 apt-get autoremove -y
+
 exit 0;
