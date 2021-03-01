@@ -14,6 +14,7 @@ systemctl enable wazuh-manager
 systemctl start wazuh-manager
 systemctl status wazuh-manager 
 # Elastic
-apt install elasticsearch-oss opendistroforelasticsearch
+apt install elasticsearch-oss opendistroforelasticsearch -y
+
 
   exit 0;
