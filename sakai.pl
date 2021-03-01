@@ -5,6 +5,7 @@ use warnings;
 use diagnostics;
 
 # Packages
+my $fix_broken = `dpkg --configure -a`;
 my $pack_ = `apt-get update && apt-get upgrade -y`;
 
 # Up OS
