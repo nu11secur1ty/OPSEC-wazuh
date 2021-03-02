@@ -10,7 +10,12 @@ rm -rf /etc/*wazuh*
 rm -rf /var/lib/elasticsearch
 rm -rf /etc/elasticsearch
 rm -rf /etc/apt/sources.list.d/*wazuh*
-
+# cleaning
+apt-get update -y
+apt-get dist-upgrade -y
+apt-get autoremove -y
+dpkg --configure -a
+apt-get --fix-broken install -y
 apt-get autoremove -y
 
 exit 0;
