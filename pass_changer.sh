@@ -1,6 +1,7 @@
 #!/usr/bin/bash
-# @nu11secur1ty
+# @nu11secur1ty OPSEC-2021
 
+# HOWTO: https://documentation.wazuh.com/current/user-manual/elasticsearch/elastic_tuning.html#change-users-password
 # Tool to change the passwords of Open Distro internal users
 # Copyright (C) 2015-2021, Wazuh Inc.
 #
