@@ -2,6 +2,7 @@
 # @nu11secur1ty
 apt-get purge wazuh-manager -y
 apt-get purge filebeat -y
+apt-get purge opendistroforelasticsearch -y
 apt-get purge --auto-remove opendistroforelasticsearch -y
 apt-get purge opendistroforelasticsearch-kibana -y
 rm -rf /etc/*wazuh*
