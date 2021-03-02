@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 # @nu11secur1ty
+apt-get purge wazuh -y
 apt-get purge filebeat -y
-apt-get purge --purge filebeat -y
 apt-get purge --auto-remove opendistroforelasticsearch -y
 apt-get purge opendistroforelasticsearch-kibana -y
-apt-get purge --purge opendistroforelasticsearch-kibana -y
+rm -rf /etc/*wazuh*
 rm -rf /var/lib/elasticsearch
 rm -rf /etc/elasticsearch
 rm -rf /etc/apt/sources.list.d/*wazuh*
