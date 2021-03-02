@@ -8,6 +8,7 @@
 # and/or modify it under the terms of the GNU General Public
 # License (version 2) as published by the FSF - Free Software
 # Foundation.
+# Usage (bash pass_changer.sh -u admin -p yourpassword)
 
 VERBOSE='> /dev/null 2>&1'
 if [ -n "$(command -v yum)" ]; then
