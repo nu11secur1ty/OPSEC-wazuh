@@ -1,0 +1,130 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>wopsLevels</title>
+    <style type="text/css">
+        #tableIdContents {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        #tableIdContents td, #tableIdContents th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+
+        #tableIdContents tr:nth-child(even){background-color: #f2f2f2;}
+
+        #tableIdContents tr:hover {background-color: #ddd;}
+
+        #tableIdContents th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #302e8d;
+        color: white;
+        }
+
+    </style>
+</head>
+    
+<body lang="en-us" dir="ltr">
+    <table id="tableIdContents">
+        <colgroup>
+        <col style="width: 4%" />
+        <col style="width: 22%" />
+        <col style="width: 74%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Level</p></th>
+        <th class="head"><p>Title</p></th>
+        <th class="head"><p>Description</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td style="text-align: center;">0</td>
+        <td><p>Ignored</p></td>
+        <td><p>No action taken. Used to avoid false positives.</p>
+        <p>These rules are scanned before all the others.</p>
+        <p>They include events with no security relevance.</p>
+        </td>
+        </tr>
+        <tr class="row-odd"><td style="text-align: center;"><p>2</p></td>
+        <td><p>System low priority notification</p></td>
+        <td><p>System notification or status messages. They have no security relevance.</p></td>
+        </tr>
+        <tr class="row-even"><td style="text-align: center;"><p>3</p></td>
+        <td><p>Successful/Authorized events</p></td>
+        <td><p>They include successful login attempts, firewall allow events, etc.</p></td>
+        </tr>
+        <tr class="row-odd"><td style="text-align: center;"><p>4</p></td>
+        <td><p>System low priority error</p></td>
+        <td><p>Errors related to bad configurations or unused devices/applications.</p>
+        <p>They have no security relevance and are usually caused by default installations or software testing.</p>
+        </td>
+        </tr>
+        <tr class="row-even"><td style="text-align: center;"><p>5</p></td>
+        <td><p>User generated error</p></td>
+        <td><p>They include missed passwords, denied actions, etc. By itself they have no security relevance.</p></td>
+        </tr>
+        <tr class="row-odd"><td style="text-align: center;"><p>6</p></td>
+        <td><p>Low relevance attack</p></td>
+        <td><p>They indicate a worm or a virus that have no affect to the system (like code red for apache servers, etc).</p>
+        <p>They also include frequently IDS events and frequently errors.</p>
+        </td>
+        </tr>
+        <tr class="row-even"><td style="text-align: center;"><p>7</p></td>
+        <td><p>“Bad word” matching</p></td>
+        <td><p>They include words like “bad”, “error”, etc.</p>
+        <p>These events are most of the time unclassified and may have some security relevance.</p>
+        </td>
+        </tr>
+        <tr class="row-odd"><td style="text-align: center;"><p>8</p></td>
+        <td><p>First time seen</p></td>
+        <td><p>Include first time seen events. First time an IDS event is fired or the first time an user logged in.</p>
+        <p>It also includes security relevant actions (like the starting of a sniffer or something like that).</p>
+        </td>
+        </tr>
+        <tr class="row-even"><td style="text-align: center;"><p>9</p></td>
+        <td><p>Error from invalid source</p></td>
+        <td><p>Include attempts to login as an unknown user or from an invalid source.</p>
+        <p>May have security relevance (specially if repeated).</p>
+        <p>They also include errors regarding the “admin” (root) account.</p>
+        </td>
+        </tr>
+        <tr class="row-odd"><td style="text-align: center;"><p>10</p></td>
+        <td><p>Multiple user generated errors</p></td>
+        <td><p>They include multiple bad passwords, multiple failed logins, etc.</p>
+        <p>They may indicate an attack or may just be that a user just forgot his credencials.</p>
+        </td>
+        </tr>
+        <tr class="row-even"><td style="text-align: center;"><p>11</p></td>
+        <td><p>Integrity checking warning</p></td>
+        <td><p>They include messages regarding the modification of binaries or the presence of rootkits (by Rootcheck).</p>
+        <p>They may indicate a successful attack. Also included IDS events that will be ignored (high number of repetitions).</p>
+        </td>
+        </tr>
+        <tr class="row-odd"><td style="text-align: center;"><p>12</p></td>
+        <td><p>High importance event</p></td>
+        <td><p>They include error or warning messages from the system, kernel, etc.</p>
+        <p>They may indicate an attack against a specific application.</p>
+        </td>
+        </tr>
+        <tr class="row-even"><td style="text-align: center;"><p>13</p></td>
+        <td><p>Unusual error (high importante)</p></td>
+        <td><p>Most of the times it matches a common attack pattern.</p></td>
+        </tr>
+        <tr class="row-odd"><td style="text-align: center;"><p>14</p></td>
+        <td><p>High importance security event</p></td>
+        <td><p>Most of the times done with correlation and it indicates an attack.</p></td>
+        </tr>
+        <tr class="row-even"><td style="text-align: center;"><p>15</p></td>
+        <td><p>Severe attack</p></td>
+        <td><p>No chances of false positives. Immediate attention is necessary.</p></td>
+        </tr>
+        </tbody>
+        </table>
+</body>
+</html>

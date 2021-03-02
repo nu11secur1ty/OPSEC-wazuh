@@ -1,0 +1,2661 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>microsoftID</title>
+    <style type="text/css">
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        #tableIdContents {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #myInput {
+            background-image: url('searchicon.png');
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            width: 20%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-left: 6px;
+        }
+
+        #tableIdContents td,
+        #tableIdContents th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #tableIdContents tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #tableIdContents tr:hover {
+            background-color: #ddd;
+        }
+
+        #tableIdContents th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #302e8d;
+            color: white;
+        }
+
+        #tableIdContents a {
+            text-decoration: none;
+        }
+        body {
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+    </style>
+</head>
+
+<body lang="en-us" dir="ltr">
+    <h1 style="text-align: center; padding-top: 1em; padding-bottom: 0.5em;">ATT&CK Matrix for Enterprise</h1>
+    
+    <div style="background-color: #302e8d;">
+        <input type="number" id="myInput" onkeyup="myFunction()" placeholder="Search IDs">
+    </div>
+
+    <table id="tableIdContents">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color: greenyellow;">
+                <td>Initial Access</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1189</td>
+                <td><a href="https://attack.mitre.org/techniques/T1189" data-toggle="tooltip" target="_blank"
+                        data-placement="top" title="T1189">Drive-by Compromise</a></td>
+            </tr>
+            <tr>
+                <td>T1190</td>
+                <td><a href="https://attack.mitre.org/techniques/T1190" target="_blank">Exploit Public-Facing
+                        Application</a></td>
+            </tr>
+            <tr>
+                <td>T1133</td>
+                <td><a href="https://attack.mitre.org/techniques/T1133" target="_blank">External Remote Services</a>
+                </td>
+            </tr>
+            <tr>
+                <td>T1200</td>
+                <td><a href="https://attack.mitre.org/techniques/T1200" target="_blank"> Hardware Additions</a></td>
+            </tr>
+            <tr>
+                <td>T1566</td>
+                <td><a href="https://attack.mitre.org/techniques/T1566" target="_blank">Phishing (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1566.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1566/001" target="_blank">Spearphishing Attachment</a>
+                </td>
+            </tr>
+            <tr>
+                <td>T1566.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1566/002" target="_blank">Spearphishing Link</a></td>
+            </tr>
+            <tr>
+                <td>T1566.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1566/003" target="_blank">Spearphishing via
+                        Service</a></td>
+            </tr>
+            <tr>
+                <td>T1091</td>
+                <td><a href="https://attack.mitre.org/techniques/T1091" target="_blank">Replication Through Removable
+                        Media </a></td>
+            </tr>
+            <tr>
+                <td>T1195</td>
+                <td><a href="https://attack.mitre.org/techniques/T1195" target="_blank">Supply Chain Compromise (3)</a>
+                </td>
+            </tr>
+            <tr>
+                <td>T1195.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1195/001" target="_blank">Compromise Software Dependencies and Development Tools </a></td>
+            </tr>
+            <tr>
+                <td>T1195.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1195/002" target="_blank">Compromise Software Supply
+                        Chain </a></td>
+            </tr>
+            <tr>
+                <td>T1195.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1195/003" target="_blank">Compromise Hardware Supply
+                        Chain </a></td>
+            </tr>
+            <tr>
+                <td>T1199</td>
+                <td><a href="https://attack.mitre.org/techniques/T1199" target="_blank">Trusted Relationship </a></td>
+            </tr>
+            <tr>
+                <td>T1078</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078" target="_blank">Valid Accounts (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1078.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/001" target="_blank">Default Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/002" target="_blank">Domain Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/003" target="_blank">Local Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/004" target="_blank">Cloud Accounts</a></td>
+            </tr>
+            <tr style="background-color: greenyellow;">
+                <td>Execution</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1059</td>
+                <td><a href="https://attack.mitre.org/techniques/T1059" target="_blank">Command and Scripting
+                        Interpreter (7)</a></td>
+            </tr>
+            <tr>
+                <td>T1059.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1059/001" target="_blank">PowerShell</a></td>
+            </tr>
+            <tr>
+                <td>T1059.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1059/002" target="_blank">AppleScript</a></td>
+            </tr>
+            <tr>
+                <td>T1059.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1059/003" target="_blank">Windows Command Shell</a>
+                </td>
+            </tr>
+            <tr>
+                <td>T1059.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1059/004" target="_blank">Unix Shell</a></td>
+            </tr>
+            <tr>
+                <td>T1059.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1059/005" target="_blank">Visual Basic</a></td>
+            </tr>
+            <tr>
+                <td>T1059.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1059/006" target="_blank">Python</a></td>
+            </tr>
+            <tr>
+                <td>T1059.007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1059/007" target="_blank">JavaScript/JScript</a></td>
+            </tr>
+            <tr>
+                <td>T1203</td>
+                <td><a href="https://attack.mitre.org/techniques/T1203" target="_blank">Exploitation for Client
+                        Execution</a></td>
+            </tr>
+            <tr>
+                <td>T1559</td>
+                <td><a href="https://attack.mitre.org/techniques/T1559" target="_blank">Inter-Process
+                    Communication</a></td>
+            </tr>
+            <tr>
+                <td>T1559.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1559/001" target="_blank">Component Object Model</a></td>
+            </tr>
+            <tr>
+                <td>T1559.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1559/002" target="_blank">Dynamic Data Exchange</a></td>
+            </tr>
+            <tr>
+                <td>T1106</td>
+                <td><a href="https://attack.mitre.org/techniques/T1106" target="_blank">Native API</a></td>
+            </tr>
+            <tr>
+                <td>T1053</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053" target="_blank">Scheduled Task/Job (5)</a></td>
+            </tr>
+            <tr>
+                <td>T1053.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/001" target="_blank">At (Windows)</a></td>
+            </tr>
+            <tr>
+                <td>T1053.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/002" target="_blank">Scheduled Task</a></td>
+            </tr>
+            <tr>
+                <td>T1053.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/003" target="_blank">At (Linux)</a></td>
+            </tr>
+            <tr>
+                <td>T1053.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/004" target="_blank">Launchd</a></td>
+            </tr>
+            <tr>
+                <td>T1053.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/005" target="_blank">Cron</a></td>
+            </tr>
+            <tr>
+                <td>T1129</td>
+                <td><a href="https://attack.mitre.org/techniques/T1129" target="_blank">Shared Modules</a></td>
+            </tr>
+            <tr>
+                <td>T1072</td>
+                <td><a href="https://attack.mitre.org/techniques/T1072" target="_blank">Software Deployment Tools</a></td>
+            </tr>
+            <tr>
+                <td>T1569</td>
+                <td><a href="https://attack.mitre.org/techniques/T1569" target="_blank">System Services (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1569.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1569/001" target="_blank">Launchctl</a></td>
+            </tr>
+            <tr>
+                <td>T1569.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1569/002" target="_blank">Service Execution</a></td>
+            </tr>
+            <tr>
+                <td>T1204</td>
+                <td><a href="https://attack.mitre.org/techniques/T1204" target="_blank">User Execution (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1204.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1204/001" target="_blank">Malicious Link</a></td>
+            </tr>
+            <tr>
+                <td>T1204.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1204/002" target="_blank">Malicious File</a></td>
+            </tr>
+            <tr>
+                <td>T1047</td>
+                <td><a href="https://attack.mitre.org/techniques/T1047" target="_blank">Windows Management
+                    Instrumentation</a></td>
+            </tr>
+            <tr style="background-color: greenyellow;">
+                <td>Persistence</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1098</td>
+                <td><a href="https://attack.mitre.org/techniques/T1098" target="_blank">Account Manipulation (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1098.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1098/001" target="_blank">Additional Azure Service Principal Credentials</a></td>
+            </tr>
+            <tr>
+                <td>T1098.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1098/002" target="_blank">Exchange Email Delegate Permissions</a></td>
+            </tr>
+            <tr>
+                <td>T1098.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1098/003" target="_blank">Add Office 365 Global Administrator Role</a></td>
+            </tr>
+            <tr>
+                <td>T1098.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1098/004" target="_blank">SSH Authorized Keys</a></td>
+            </tr>
+            <tr>
+                <td>T1197</td>
+                <td><a href="https://attack.mitre.org/techniques/T1197" target="_blank">BITS Jobs</a></td>
+            </tr>
+            <tr>
+                <td>T1547</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547" target="_blank">Boot or Logon Autostart Execution (11)</a></td>
+            </tr>
+            <tr>
+                <td>T1547.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/001" target="_blank">Registry Run Keys
+                    / Startup Folder</a></td>
+            </tr>
+            <tr>
+                <td>T1547.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/002" target="_blank">Authentication
+                    Package</a></td>
+            </tr>
+            <tr>
+                <td>T1547.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/003" target="_blank">Time Providers</a></td>
+            </tr>
+            <tr>
+                <td>T1547.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/004" target="_blank">Winlogon Helper
+                    DLL</a></td>
+            </tr>
+            <tr>
+                <td>T1547.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/005" target="_blank">Security Support
+                    Provider</a></td>
+            </tr>
+            <tr>
+                <td>T1547.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/006" target="_blank">Kernel Modules and
+                    Extensions</a></td>
+            </tr>
+            <tr>
+                <td>T1547.007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/007" target="_blank">Re-opened
+                    Applications</a></td>
+            </tr>
+            <tr>
+                <td>T1547.008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/008" target="_blank">LSASS Driver</a></td>
+            </tr>
+            <tr>
+                <td>T1547.009</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/009" target="_blank">>Shortcut
+                    Modification</a></td>
+            </tr>
+            <tr>
+                <td>T1547.010</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/010" target="_blank">Port Monitors</a></td>
+            </tr>
+            <tr>
+                <td>T1547.011</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/011" target="_blank">Plist
+                    Modification</a></td>
+            </tr>
+            <tr>
+                <td>T1037</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037" target="_blank">Boot or Logon Initialization Scripts</a></td>
+            </tr>
+            <tr>
+                <td>T1037.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037/001" target="_blank">Logon Script
+                    (Windows)</a></td>
+            </tr>
+            <tr>
+                <td>T1037.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037/002" target="_blank">Logon Script
+                    (Mac)</a></td>
+            </tr>
+            <tr>
+                <td>T1037.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037/003" target="_blank">Network Logon
+                    Script</a></td>
+            </tr>
+            <tr>
+                <td>T1037.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037/004" target="_blank">Rc.common</a></td>
+            </tr>
+            <tr>
+                <td>T1037.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037/005" target="_blank">Startup items</a></td>
+            </tr>
+            <tr>
+                <td>T1176</td>
+                <td><a href="https://attack.mitre.org/techniques/T1176" target="_blank">Browser Extensions</a></td>
+            </tr>
+            <tr>
+                <td>T1554</td>
+                <td><a href="https://attack.mitre.org/techniques/T1554" target="_blank">Compromise Client Software
+                    Binary</a></td>
+            </tr>
+            <tr>
+                <td>T1136</td>
+                <td><a href="https://attack.mitre.org/techniques/T1136" target="_blank">Create Account (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1136.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1136/001" target="_blank">Local Account</a></td>
+            </tr>
+            <tr>
+                <td>T1136.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1136/002" target="_blank">Domain Account</a></td>
+            </tr>
+            <tr>
+                <td>T1136.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1136/003" target="_blank">Cloud Account</a></td>
+            </tr>
+            <tr>
+                <td>T1543</td>
+                <td><a href="https://attack.mitre.org/techniques/T1543" target="_blank">Create or Modify System Process (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1543.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1543/001" target="_blank">Launch Agent</a></td>
+            </tr>
+            <tr>
+                <td>T1543.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1543/002" target="_blank">Systemd
+                    Service</a></td>
+            </tr>
+            <tr>
+                <td>T1543.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1543/003" target="_blank">Windows
+                    Service</a></td>
+            </tr>
+            <tr>
+                <td>T1543.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1543/004" target="_blank">Launch Daemon</a></td>
+            </tr>
+            <tr>
+                <td>T1546</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546" target="_blank">Event Triggered Execution (15)</a></td>
+            </tr>
+            <tr>
+                <td>T1546.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/001" target="_blank">Change Default
+                    File Association</a></td>
+            </tr>
+            <tr>
+                <td>T1546.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/002" target="_blank">Screensaver</a></td>
+            </tr>
+            <tr>
+                <td>T1546.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/003" target="_blank">Windows Management
+                    Instrumentation Event Subscription</a></td>
+            </tr>
+            <tr>
+                <td>T1546.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/004" target="_blank">.bash_profile and
+                    .bashrc</a></td>
+            </tr>
+            <tr>
+                <td>T1546.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/005" target="_blank">Trap</a></td>
+            </tr>
+            <tr>
+                <td>T1546.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/006" target="_blank">LC_LOAD_DYLIB
+                    Addition</a></td>
+            </tr>
+            <tr>
+                <td>T1546.007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/007" target="_blank">Netsh Helper
+                    DLL</a></td>
+            </tr>
+            <tr>
+                <td>T1546.008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/008" target="_blank">Accessibility
+                    Features</a></td>
+            </tr>
+            <tr>
+                <td>T1546.009</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/009" target="_blank">AppCert DLLs</a></td>
+            </tr>
+            <tr>
+                <td>T1546.010</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546.010" target="_blank">AppInit DLLs</a></td>
+            </tr>
+            <tr>
+                <td>T1546.011</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546.011" target="_blank">Application
+                    Shimming</a></td>
+            </tr>
+            <tr>
+                <td>T1546.012</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546.012" target="_blank">Image File
+                    Execution Options Injection</a></td>
+            </tr>
+            <tr>
+                <td>T1546.013</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546.013" target="_blank">PowerShell
+                    Profile</a></td>
+            </tr>
+            <tr>
+                <td>T1546.014</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546.014" target="_blank">Emond</a></td>
+            </tr>
+            <tr>
+                <td>T1546.015</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546.015" target="_blank">Component Object Model Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1133</td>
+                <td><a href="https://attack.mitre.org/techniques/T1133" target="_blank">External Remote Services</a></td>
+            </tr>
+            <tr>
+                <td>T1574</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574" target="_blank">Hijack Execution Flow (11)</a></td>
+            </tr>
+            <tr>
+                <td>T1574.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/001" target="_blank">DLL Search Order
+                    Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1574.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/002" target="_blank">DLL Side-Loading</a></td>
+            </tr>
+            <tr>
+                <td>T1574.012</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/012" target="_blank">COR_PROFILER</a></td>
+            </tr>
+            <tr>
+                <td>T1574.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/004" target="_blank">Dylib
+                    Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1574.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/005" target="_blank">Executable
+                    Installer File Permissions Weakness</a></td>
+            </tr>
+            <tr>
+                <td>T1574.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/006" target="_blank">LD_PRELOAD</a></td>
+            </tr>
+            <tr>
+                <td>T1574.007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/007" target="_blank">Path Interception
+                    by PATH Environment Variable</a></td>
+            </tr>
+            <tr>
+                <td>T1574.008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/008" target="_blank">Path Interception
+                    by Search Order Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1574.009</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/009" target="_blank">Path Interception
+                    by Unquoted Path</a></td>
+            </tr>
+            <tr>
+                <td>T1574.010</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/010" target="_blank">Services File
+                    Permissions Weakness</a></td>
+            </tr>
+            <tr>
+                <td>T1574.011</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/011" target="_blank">Services Registry
+                    Permissions Weakness</a></td>
+            </tr>
+            <tr>
+                <td>T1525</td>
+                <td><a href="https://attack.mitre.org/techniques/T1525" target="_blank">Implant Container Image</a></td>
+            </tr>
+            <tr>
+                <td>T1137</td>
+                <td><a href="https://attack.mitre.org/techniques/T1137" target="_blank">Office Application Startup (6)</a></td>
+            </tr>
+            <tr>
+                <td>T1137.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1137/006" target="_blank">Add-ins</a></td>
+            </tr>
+            <tr>
+                <td>T1137.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1137/001" target="_blank">Office Template
+                    Macros</a></td>
+            </tr>
+            <tr>
+                <td>T1137.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1137/003" target="_blank">Outlook Forms</a></td>
+            </tr>
+            <tr>
+                <td>T1137.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1137/005" target="_blank">Outlook Rules</a></td>
+            </tr>
+            <tr>
+                <td>T1137.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1137/004" target="_blank">Outlook Home
+                    Page</a></td>
+            </tr>
+            <tr>
+                <td>T1137.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1137/002" target="_blank">Office Test</a></td>
+            </tr>
+            <tr>
+                <td>T1542</td>
+                <td><a href="https://attack.mitre.org/techniques/T1542" target="_blank">Pre-OS Boot (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1542.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1542/001" target="_blank">System Firmware</a></td>
+            </tr>
+            <tr>
+                <td>T1542.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1542/002" target="_blank">Component Firmware</a></td>
+            </tr>
+            <tr>
+                <td>T1542.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1542/003" target="_blank">Bootkit</a></td>
+            </tr>
+            <tr>
+                <td>T1053</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053" target="_blank">Scheduled Task/Job (5)</a></td>
+            </tr>
+            <tr>
+                <td>T1053.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/001" target="_blank">At (Linux)</a></td>
+            </tr>
+            <tr>
+                <td>T1053.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/002" target="_blank">At (Windows)</a></td>
+            </tr>
+            <tr>
+                <td>T1053.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/003" target="_blank">Cron</a></td>
+            </tr>
+            <tr>
+                <td>T1053.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/004" target="_blank">Launched</a></td>
+            </tr>
+            <tr>
+                <td>T1053.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/005" target="_blank">Scheduled Task</a></td>
+            </tr>
+            <tr>
+                <td>T1505</td>
+                <td><a href="https://attack.mitre.org/techniques/T1505" target="_blank">Server Software Component</a></td>
+            </tr>
+            <tr>
+                <td>T1505.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1505/001" target="_blank">SQL Stored Procedures</a></td>
+            </tr>
+            <tr>
+                <td>T1505.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1505/002" target="_blank">Transport Agent</a></td>
+            </tr>
+            <tr>
+                <td>T1505.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1505/003" target="_blank">Web Shell</a></td>
+            </tr>
+            <tr>
+                <td>T1205</td>
+                <td><a href="https://attack.mitre.org/techniques/T1205" target="_blank">Traffic Signaling (1)</a></td>
+            </tr>
+            <tr>
+                <td>T1205.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1205/001" target="_blank">Port Knocking</a></td>
+            </tr>
+            <tr>
+                <td>T1078</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078" target="_blank">Valid Accounts (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1078.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/001" target="_blank">Default
+                    Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/002" target="_blank">Domain
+                    Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/003" target="_blank">Local Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/004" target="_blank">Cloud Accounts</a></td>
+            </tr>
+            <tr style="background-color: greenyellow;">
+                <td>Privilege Escalation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1548</td>
+                <td><a href="https://attack.mitre.org/techniques/T1548" target="_blank">Abuse Elevation Control Mechanism (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1548.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1548/001" target="_blank">Setuid and Setgid</a></td>
+            </tr>
+            <tr>
+                <td>T1548.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1548/002" target="_blank">Bypass User Access Control</a></td>
+            </tr>
+            <tr>
+                <td>T1548.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1548/003" target="_blank">Sudo and Sudo Caching</a></td>
+            </tr>
+            <tr>
+                <td>T1548.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1548/004" target="_blank">Elevated Execution with Prompt</a></td>
+            </tr>
+            <tr>
+                <td>T1134</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134" target="_blank">Access Token
+                    Manipulation (5)</a></td>
+            </tr>
+            <tr>
+                <td>T1134.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134/001" target="_blank">Token
+                    Impersonation/Theft</a></td>
+            </tr>
+            <tr>
+                <td>T1134.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134/002" target="_blank">Create Process
+                    with Token</a></td>
+            </tr>
+            <tr>
+                <td>T1134.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134/003" target="_blank">Make and
+                    Impersonate Token</a></td>
+            </tr>
+            <tr>
+                <td>T1134.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134/004" target="_blank">Parent PID
+                    Spoofing</a></td>
+            </tr>
+            <tr>
+                <td>T1134.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134/005" target="_blank">SID-History
+                    Injection</a></td>
+            </tr>
+            <tr>
+                <td>T1547</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547" target="_blank">Boot or Logon Autostart Execution (11)</a></td>
+            </tr>
+            <tr>
+                <td>T1547.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/001" target="_blank">Registry Run Keys / Startup Folder</a></td>
+            </tr>
+            <tr>
+                <td>T1547.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/002" target="_blank">Authentication Package</a></td>
+            </tr>
+            <tr>
+                <td>T1547.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/003" target="_blank">Time Providers</a></td>
+            </tr>
+            <tr>
+                <td>T1547.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/004" target="_blank">Winlogon Helper DLL</a></td>
+            </tr>
+            <tr>
+                <td>T1547.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/005" target="_blank">Security Support Provider</a></td>
+            </tr>
+            <tr>
+                <td>T1547.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/006" target="_blank">Kernel Modules and Extensions</a></td>
+            </tr>
+            <tr>
+                <td>T1547.007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/007" target="_blank">Re-opened Applications</a></td>
+            </tr>
+            <tr>
+                <td>T1547.008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/008" target="_blank">LSASS Driver</a></td>
+            </tr>
+            <tr>
+                <td>T1547.009</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/009" target="_blank">Shortcut Modification</a></td>
+            </tr>
+            <tr>
+                <td>T1547.010</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/010" target="_blank">Port Monitors</a></td>
+            </tr>
+            <tr>
+                <td>T1547.011</td>
+                <td><a href="https://attack.mitre.org/techniques/T1547/011" target="_blank">Plist Modification</a></td>
+            </tr>
+            <tr>
+                <td>T1037</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037" target="_blank">Boot or Logon Initialization Scripts (5)</a></td>
+            </tr>
+            <tr>
+                <td>T1037.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037/001" target="_blank">Logon Script (Windows)</a></td>
+            </tr>
+            <tr>
+                <td>T1037.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037/002" target="_blank">Logon Script (Mac)</a></td>
+            </tr>
+            <tr>
+                <td>T1037.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037/003" target="_blank">Network Logon Script</a></td>
+            </tr>
+            <tr>
+                <td>T1037.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037/004" target="_blank">Rc.common</a></td>
+            </tr>
+            <tr>
+                <td>T1037.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1037/005" target="_blank">Startup Items</a></td>
+            </tr>
+            <tr>
+                <td>T1543</td>
+                <td><a href="https://attack.mitre.org/techniques/T1543" target="_blank">Create or Modify System Process (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1543.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1543/001" target="_blank">Launch Agent</a></td>
+            </tr>
+            <tr>
+                <td>T1543.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1543/002" target="_blank">Systemd Service</a></td>
+            </tr>
+            <tr>
+                <td>T1543.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1543/003" target="_blank">Windows Service</a></td>
+            </tr>
+            <tr>
+                <td>T1543.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1543/004" target="_blank">Launch Daemon</a></td>
+            </tr>
+            <tr>
+                <td>T1546</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546" target="_blank">Event Triggered Execution (15)</a></td>
+            </tr>
+            <tr>
+                <td>T1546.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/001" target="_blank">Change Default File Association</a></td>
+            </tr>
+            <tr>
+                <td>T1546.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/002" target="_blank">Screensaver</a></td>
+            </tr>
+            <tr>
+                <td>T1546.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/003" target="_blank">Windows Management Instrumentation Event Subscription</a></td>
+            </tr>
+            <tr>
+                <td>T1546.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/004" target="_blank">.bash_profile and .bashrc</a></td>
+            </tr>
+            <tr>
+                <td>T1546.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/005" target="_blank">Trap</a></td>
+            </tr>
+            <tr>
+                <td>T1546.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/006" target="_blank">LC_LOAD_DYLIB Addition</a></td>
+            </tr>
+            <tr>
+                <td>T1546.007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/007" target="_blank">Netsh Helper DLL</a></td>
+            </tr>
+            <tr>
+                <td>T1546.008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/008" target="_blank">Accessibility Features</a></td>
+            </tr>
+            <tr>
+                <td>T1546.009</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/009" target="_blank">Accessibility Features</a></td>
+            </tr>
+            <tr>
+                <td>T1546.010</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/010" target="_blank">AppInit DLLs</a></td>
+            </tr>
+            <tr>
+                <td>T1546.011</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/011" target="_blank">Application Shimming</a></td>
+            </tr>
+            <tr>
+                <td>T1546.012</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/012" target="_blank">Image File Execution Options Injection</a></td>
+            </tr>
+            <tr>
+                <td>T1546.013</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/013" target="_blank">PowerShell Profile</a></td>
+            </tr>
+            <tr>
+                <td>T1546.014</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/014" target="_blank">Emond</a></td>
+            </tr>
+            <tr>
+                <td>T1546.015</td>
+                <td><a href="https://attack.mitre.org/techniques/T1546/015" target="_blank">Component Object Model Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1068</td>
+                <td><a href="https://attack.mitre.org/techniques/T1068" target="_blank">Exploitation for Privilege Escalation</a></td>
+            </tr>
+            <tr>
+                <td>T1484</td>
+                <td><a href="https://attack.mitre.org/techniques/T1484" target="_blank">Group Policy Modification</a></td>
+            </tr>
+            <tr>
+                <td>T1574</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574" target="_blank">Hijack Execution Flow (11)</a></td>
+            </tr>
+            <tr>
+                <td>T1574.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/001" target="_blank">DLL Search Order Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1574.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/002" target="_blank">DLL Side-Loading</a></td>
+            </tr>
+            <tr>
+                <td>T1574.012</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/012" target="_blank">COR_PROFILER</a></td>
+            </tr>
+            <tr>
+                <td>T1574.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/004" target="_blank">Dylib Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1574.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/005" target="_blank">Executable Installer File Permissions Weakness</a></td>
+            </tr>
+            <tr>
+                <td>T1574.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/006" target="_blank">LD_PRELOAD</a></td>
+            </tr>
+            <tr>
+                <td>T1574.007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/007" target="_blank">Path Interception by PATH Environment Variable</a></td>
+            </tr>
+            <tr>
+                <td>T1574.008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/008" target="_blank">Path Interception by Search Order Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1574.009</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/009" target="_blank">Path Interception by Unquoted Path</a></td>
+            </tr>
+            <tr>
+                <td>T1574.010</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/010" target="_blank">Services File Permissions Weakness</a></td>
+            </tr>
+            <tr>
+                <td>T1574.11</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/11" target="_blank">Services Registry Permissions Weakness</a></td>
+            </tr>
+            <tr>
+                <td>T1055</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055" target="_blank">Process Injection (11)</a></td>
+            </tr>
+            <tr>
+                <td>T1055.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/001" target="_blank">Dynamic-link Library Injection</a></td>
+            </tr>
+            <tr>
+                <td>T1055.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/002" target="_blank">Portable Executable Injection</a></td>
+            </tr>
+            <tr>
+                <td>T1055.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/003" target="_blank">Thread Execution Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1055.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/004" target="_blank">Asynchronous Procedure Call</a></td>
+            </tr>
+            <tr>
+                <td>T1055.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/005" target="_blank">Thread Local Storage</a></td>
+            </tr>
+            <tr>
+                <td>T1055.012</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/012" target="_blank">Process Hollowing</a></td>
+            </tr>
+            <tr>
+                <td>T1055.014</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/014" target="_blank">VDSO Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1055.008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/008" target="_blank">Ptrace System Calls</a></td>
+            </tr>
+            <tr>
+                <td>T1055.009</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/009" target="_blank">Proc Memory</a></td>
+            </tr>
+            <tr>
+                <td>T1055.013</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/013" target="_blank">Process Doppelgänging</a></td>
+            </tr>
+            <tr>
+                <td>T1055.011</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/011" target="_blank">Extra Window Memory Injection</a></td>
+            </tr>
+            <tr>
+                <td>T1053</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053" target="_blank">Scheduled Task/Job (5)</a></td>
+            </tr>
+            <tr>
+                <td>T1053.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/001" target="_blank">At (Linux)</a></td>
+            </tr>
+            <tr>
+                <td>T1053.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/002" target="_blank">At (Windows)</a></td>
+            </tr>
+            <tr>
+                <td>T1053.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/003" target="_blank">Cron</a></td>
+            </tr>
+            <tr>
+                <td>T1053.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/004" target="_blank">Scheduled</a></td>
+            </tr>
+            <tr>
+                <td>T1053.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1053/005" target="_blank">Scheduled Task</a></td>
+            </tr>
+            <tr>
+                <td>T1078</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078" target="_blank">Valid Accounts (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1078.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/001" target="_blank">Default Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/002" target="_blank">Domain Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/003" target="_blank">Local Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/004" target="_blank">Cloud Accounts</a></td>
+            </tr>
+            <tr style="background-color: greenyellow;">
+                <td>Defense Evasion</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1548</td>
+                <td><a href="https://attack.mitre.org/techniques/T1548" target="_blank">Abuse Elevation Control Mechanism (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1548.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1548/001" target="_blank">Setuid and
+                    Setgid</a></td>
+            </tr>
+            <tr>
+                <td>T1548.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1548/002" target="_blank">Bypass User Access
+                    Control</a></td>
+            </tr>
+            <tr>
+                <td>T1548.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1548/003" target="_blank">Sudo and Sudo
+                    Caching</a></td>
+            </tr>
+            <tr>
+                <td>T1548.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1548/004" target="_blank">Sudo and Sudo
+                    Caching</a></td>
+            </tr>
+            <tr>
+                <td>T1134</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134" target="_blank">Access Token
+                    Manipulation (5)</a></td>
+            </tr>
+            <tr>
+                <td>T1134.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134/001" target="_blank">Token
+                    Impersonation/Theft</a></td>
+            </tr>
+            <tr>
+                <td>T1134.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134/002" target="_blank">Create Process
+                    with Token</a></td>
+            </tr>
+            <tr>
+                <td>T1134.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134/003" target="_blank">Make and
+                    Impersonate Token</a></td>
+            </tr>
+            <tr>
+                <td>T1134.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134/004" target="_blank">Parent PID
+                    Spoofing</a></td>
+            </tr>
+            <tr>
+                <td>T1134.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1134/005" target="_blank">SID-History
+                    Injection</a></td>
+            </tr>
+            <tr>
+                <td>T1197</td>
+                <td><a href="https://attack.mitre.org/techniques/T1197" target="_blank">BITS Jobs</a></td>
+            </tr>
+            <tr>
+                <td>T1140</td>
+                <td><a href="https://attack.mitre.org/techniques/T1140" target="_blank">Deobfuscate/Decode Files or
+                    Information</a></td>
+            </tr>
+            <tr>
+                <td>T1006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1006" target="_blank">Direct Volume Access</a></td>
+            </tr><tr>
+                <td>T1480</td>
+                <td><a href="https://attack.mitre.org/techniques/T1480" target="_blank">Execution
+                    Guardrails (1)</a></td>
+            </tr>
+            <tr>
+                <td>T1480.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1480/001" target="_blank">Environmental
+                    Keying</a></td>
+            </tr>
+            <tr>
+                <td>T1211</td>
+                <td><a href="https://attack.mitre.org/techniques/T1211" target="_blank">Exploitation for Defense
+                    Evasion</a></td>
+            </tr>
+            <tr>
+                <td>T1222</td>
+                <td><a href="https://attack.mitre.org/techniques/T1222" target="_blank">File and Directory Permissions Modification (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1222.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1222/001" target="_blank">Windows File and
+                    Directory Permissions
+                    Modification</a></td>
+            </tr>
+            <tr>
+                <td>T1222.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1222/002" target="_blank">Linux and Mac File
+                    and Directory Permissions
+                    Modification</a></td>
+            </tr>
+            <tr>
+                <td>T1484</td>
+                <td><a href="https://attack.mitre.org/techniques/T1484" target="_blank">Group Policy Modification</a></td>
+            </tr>
+            <tr>
+                <td>T1564</td>
+                <td><a href="https://attack.mitre.org/techniques/T1564" target="_blank">Hide Artifacts (6)</a></td>
+            </tr>
+            <tr>
+                <td>T1564.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1564/001" target="_blank">Hidden Files and
+                    Directories</a></td>
+            </tr>
+            <tr>
+                <td>T1564.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1564/002" target="_blank">Hidden Users</a></td>
+            </tr>
+            <tr>
+                <td>T1564.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1564/003" target="_blank">Hidden Window</a></td>
+            </tr>
+            <tr>
+                <td>T1564.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1564/004" target="_blank">NTFS File
+                    Attributes</a></td>
+            </tr>
+            <tr>
+                <td>T1564.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1564/005" target="_blank">Hidden File
+                    System</a></td>
+            </tr>
+            <tr>
+                <td>T1564.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1564/006" target="_blank">Run Virtual
+                    Instance</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>T1574<a href="https://attack.mitre.org/techniques/T1574" target="_blank">Hijack Execution
+                    Flow (11)</a></td>
+            </tr>
+            <tr>
+                <td>T1574.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/001" target="_blank">DLL Search Order
+                    Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1574.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/002" target="_blank">DLL
+                    Side-Loading</a></td>
+            </tr>
+            <tr>
+                <td>T1574.012</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/012" target="_blank">COR_PROFILER</a></td>
+            </tr>
+            <tr>
+                <td>T1574.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/004" target="_blank">Dylib
+                    Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1574.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/005" target="_blank">Executable
+                    Installer File Permissions
+                    Weakness</a></td>
+            </tr>
+            <tr>
+                <td>T1574.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/006" target="_blank">LD_PRELOAD</a></td>
+            </tr>
+            <tr>
+                <td>T1574.007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/007" target="_blank">Path Interception
+                    by PATH Environment Variable</a></td>
+            </tr>
+            <tr>
+                <td>T1574.008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/008" target="_blank">Path Interception
+                    by Search Order Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1574.009</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/009" target="_blank">Path Interception
+                    by Unquoted Path</a></td>
+            </tr>
+            <tr>
+                <td>T1574.010</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/010" target="_blank">Services File
+                    Permissions Weakness</a></td>
+            </tr>
+            <tr>
+                <td>T1574.011</td>
+                <td><a href="https://attack.mitre.org/techniques/T1574/011" target="_blank">Services Registry
+                    Permissions Weakness</a></td>
+            </tr>
+            <tr>
+                <td>T1562</td>
+                <td><a href="https://attack.mitre.org/techniques/T1562" target="_blank">Impair
+                    Defenses (6)</a></td>
+            </tr>
+            <tr>
+                <td>T1562.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1562/001" target="_blank">Disable or Modify
+                    Tools</a></td>
+            </tr>
+            <tr>
+                <td>T1562.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1562/002" target="_blank">Disable Windows
+                    Event Logging</a></td>
+            </tr>
+            <tr>
+                <td>T1562.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1562/003" target="_blank">HISTCONTROL</a></td>
+            </tr>
+            <tr>
+                <td>T1562.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1562/004" target="_blank">Disable or Modify
+                    System Firewall</a></td>
+            </tr>
+            <tr>
+                <td>T1562.007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1562/007" target="_blank">Disable or Modify
+                    Cloud Firewall</a></td>
+            </tr>
+            <tr>
+                <td>T1562.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1562/006" target="_blank">Indicator
+                    Blocking</a></td>
+            </tr>
+            <tr>
+                <td>T1070</td>
+                <td><a href="https://attack.mitre.org/techniques/T1070" target="_blank">Indicator Removal
+                    on Host (6)</a></td>
+            </tr>
+            <tr>
+                <td>T1070.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1070/001" target="_blank">Clear Windows
+                    Event Logs</a></td>
+            </tr>
+            <tr>
+                <td>T1070.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1070/002" target="_blank">Clear Linux or Mac
+                    System Logs</a></td>
+            </tr>
+            <tr>
+                <td>T1070.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1070/003" target="_blank">Clear Command
+                    History</a></td>
+            </tr>
+            <tr>
+                <td>T1070.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1070/004" target="_blank">File Deletion</a></td>
+            </tr>
+            <tr>
+                <td>T1070.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1070/005" target="_blank">Network Share
+                    Connection Removal</a></td>
+            </tr>
+            <tr>
+                <td>T1070.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1070/006" target="_blank">Timestomp</a></td>
+            </tr>
+            <tr>
+                <td>T1202</td>
+                <td><a href="https://attack.mitre.org/techniques/T1202" target="_blank">Indirect Command Execution</a></td>
+            </tr>
+            <tr>
+                <td>T1036</td>
+                <td><a href="https://attack.mitre.org/techniques/T1036" target="_blank">Masquerading (6)</a></td>
+            </tr>
+            <tr>
+                <td>T1036.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1036/001" target="_blank">Invalid Code
+                    Signature</a></td>
+            </tr>
+            <tr>
+                <td>T1036.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1036/002" target="_blank">Right-to-Left
+                    Override</a></td>
+            </tr>
+            <tr>
+                <td>T1036.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1036/003" target="_blank">Rename System
+                    Utilities</a></td>
+            </tr>
+            <tr>
+                <td>T1036.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1036/004" target="_blank">Masquerade Task or
+                    Service</a></td>
+            </tr>
+            <tr>
+                <td>T1036.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1036/005" target="_blank">Match Legitimate
+                    Name or Location</a></td>
+            </tr>
+            <tr>
+                <td>T1036.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1036/006" target="_blank">Space after
+                    Filename</a></td>
+            </tr>
+            <tr>
+                <td>T1556</td>
+                <td><a href="https://attack.mitre.org/techniques/T1556" target="_blank">Modify
+                    Authentication
+                    Process (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1556.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1556/001" target="_blank">Domain Controller
+                    Authentication</a></td>
+            </tr>
+            <tr>
+                <td>T1556.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1556/002" target="_blank">Password Filter
+                    DLL</a></td>
+            </tr>
+            <tr>
+                <td>T1556.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1556/003" target="_blank">Pluggable
+                    Authentication Modules</a></td>
+            </tr><tr>
+                <td>T1578</td>
+                <td><a href="https://attack.mitre.org/techniques/T1578" target="_blank">Modify Cloud
+                    Compute
+                    Infrastructure (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1578.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1578/001" target="_blank">Create
+                    Snapshot</a></td>
+            </tr>
+            <tr>
+                <td>T1578.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1578/002" target="_blank">Create Cloud
+                    Instance</a></td>
+            </tr>
+            <tr>
+                <td>T1578.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1578/003" target="_blank">Delete Cloud
+                    Instance</a></td>
+            </tr>
+            <tr>
+                <td>T1578.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1578/004" target="_blank">Revert Cloud
+                    Instance</a></td>
+            </tr>
+            <tr>
+                <td>T1112</td>
+                <td><a href="https://attack.mitre.org/techniques/T1112" target="_blank">Modify Registry</a></td>
+            </tr>
+            <tr>
+                <td>T1027</td>
+                <td><a href="https://attack.mitre.org/techniques/T1027" target="_blank">Obfuscated Files
+                    or
+                    Information (5)</a></td>
+            </tr>
+            <tr>
+                <td>T1027.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1027/001" target="_blank">Binary Padding</a></td>
+            </tr>
+            <tr>
+                <td>T1027.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1027/002" target="_blank">Software
+                    Packing</a></td>
+            </tr>
+            <tr>
+                <td>T1027.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1027/003" target="_blank">Steganography</a></td>
+            </tr>
+            <tr>
+                <td>T1027.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1027/004" target="_blank">Compile After
+                    Delivery</a></td>
+            </tr>
+            <tr>
+                <td>T1027.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1027/005" target="_blank">Indicator Removal
+                    from Tools</a></td>
+            </tr>
+            <tr>
+                <td>T1542</td>
+                <td><a href="https://attack.mitre.org/techniques/T1542" target="_blank">Pre-OS
+                    Boot (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1542.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1542/001" target="_blank">System
+                    Firmware</a></td>
+            </tr>
+            <tr>
+                <td>T1542.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1542/002" target="_blank">Component
+                    Firmware</a></td>
+            </tr>
+            <tr>
+                <td>T1542.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1542/003" target="_blank">Bootkit</a></td>
+            </tr>
+            <tr>
+                <td>T1055</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055" target="_blank">Process
+                    Injection (11)</a></td>
+            </tr>
+            <tr>
+                <td>T1055.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/001" target="_blank">Dynamic-link
+                    Library Injection</a></td>
+            </tr>
+            <tr>
+                <td>T1055.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/002" target="_blank">Portable
+                    Executable Injection</a></td>
+            </tr>
+            <tr>
+                <td>T1055.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/003" target="_blank">Thread Execution
+                    Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1055.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/004" target="_blank">Asynchronous
+                    Procedure Call</a></td>
+            </tr>
+            <tr>
+                <td>T1055.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/005" target="_blank">Thread Local
+                    Storage</a></td>
+            </tr>
+            <tr>
+                <td>T1055.012</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/012" target="_blank">Process
+                    Hollowing</a></td>
+            </tr>
+            <tr>
+                <td>T1055.014</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/014" target="_blank">VDSO Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1055.008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/008" target="_blank">Ptrace System
+                    Calls</a></td>
+            </tr>
+            <tr>
+                <td>T1055.009</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/009" target="_blank">Proc Memory</a></td>
+            </tr>
+            <tr>
+                <td>T1055.013</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/013" target="_blank">Process
+                    Doppelgänging</a></td>
+            </tr>
+            <tr>
+                <td>T1055.011</td>
+                <td><a href="https://attack.mitre.org/techniques/T1055/011" target="_blank">Extra Window
+                    Memory Injection</a></td>
+            </tr>
+            <tr>
+                <td>T1207</td>
+                <td><a href="https://attack.mitre.org/techniques/T1207" target="_blank">Rogue Domain Controller</a></td>
+            </tr>
+            <tr>
+                <td>T1014</td>
+                <td><a href="https://attack.mitre.org/techniques/T1014" target="_blank">Rootkit</a></td>
+            </tr>
+            <tr>
+                <td>T1218</td>
+                <td><a href="https://attack.mitre.org/techniques/T1218" target="_blank">Signed Binary
+                    Proxy
+                    Execution (10)</a></td>
+            </tr>
+            <tr>
+                <td>T1218.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1218/001" target="_blank">Compiled HTML
+                    File</a></td>
+            </tr>
+            <tr>
+                <td>T1218.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1218/002" target="_blank">Control Panel</a></td>
+            </tr>
+            <tr>
+                <td>T1218.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1218/003" target="_blank">CMSTP</a></td>
+            </tr>
+            <tr>
+                <td>T1218.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1218/004" target="_blank">InstallUtil</a></td>
+            </tr>
+            <tr>
+                <td>T1218.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1218/005" target="_blank">Mshta</a></td>
+            </tr>
+            <tr>
+                <td>T1218.011</td>
+                <td><a href="https://attack.mitre.org/techniques/T1218/011" target="_blank">Rundll32</a></td>
+            </tr>
+            <tr>
+                <td>T1218.007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1218/007" target="_blank">Msiexec</a></td>
+            </tr>
+            <tr>
+                <td>T1218.008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1218/008" target="_blank">Odbcconf</a></td>
+            </tr>
+            <tr>
+                <td>T1218.009</td>
+                <td><a href="https://attack.mitre.org/techniques/T1218/009" target="_blank">Regsvcs/Regasm</a></td>
+            </tr>
+            <tr>
+                <td>T1218.010</td>
+                <td><a href="https://attack.mitre.org/techniques/T1218/010" target="_blank">Regsvr32</a></td>
+            </tr>
+            <tr>
+                <td>T1216</td>
+                <td><a href="https://attack.mitre.org/techniques/T1216" target="_blank">Signed Script
+                    Proxy
+                    Execution (1)</a></td>
+            </tr>
+            <tr>
+                <td>T1216.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1216/001" target="_blank">PubPrn</a></td>
+            </tr>
+            <tr>
+                <td>T1553</td>
+                <td><a href="https://attack.mitre.org/techniques/T1553" target="_blank">Subvert Trust
+                    Controls (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1553.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1553/001" target="_blank">Gatekeeper
+                    Bypass</a></td>
+            </tr>
+            <tr>
+                <td>T1553.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1553/002" target="_blank">Code Signing</a></td>
+            </tr>
+            <tr>
+                <td>T1553.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1553/003" target="_blank">SIP and Trust
+                    Provider Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1553.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1553/004" target="_blank">Install Root
+                    Certificate</a></td>
+            </tr>
+            <tr>
+                <td>T1221</td>
+                <td><a href="https://attack.mitre.org/techniques/T1221" target="_blank">Template Injection</a></td>
+            </tr>
+            <tr>
+                <td>T1205</td>
+                <td><a href="https://attack.mitre.org/techniques/T1205" target="_blank">Traffic
+                    Signaling (1)</a></td>
+            </tr>
+            <tr>
+                <td>T1205.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1205/001" target="_blank">Port Knocking</a></td>
+            </tr>
+            <tr>
+                <td>T1127</td>
+                <td><a href="https://attack.mitre.org/techniques/T1127" target="_blank">Trusted Developer
+                    Utilities Proxy
+                    Execution (1)</a></td>
+            </tr>
+            <tr>
+                <td>T1127.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1127/001" target="_blank">MSBuild</a></td>
+            </tr>
+            <tr>
+                <td>T1535</td>
+                <td><a href="https://attack.mitre.org/techniques/T1535" target="_blank">Unused/Unsupported Cloud Regions</a></td>
+            </tr>
+            <tr>
+                <td>T1550</td>
+                <td><a href="https://attack.mitre.org/techniques/T1550" target="_blank">Use Alternate
+                    Authentication
+                    Material (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1550.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1550/001" target="_blank">Application Access
+                    Token</a></td>
+            </tr>
+            <tr>
+                <td>T1550.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1550/002" target="_blank">Pass the Hash</a></td>
+            </tr>
+            <tr>
+                <td>T1550.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1550/003" target="_blank">Pass the
+                    Ticket</a></td>
+            </tr>
+            <tr>
+                <td>T1550.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1550/004" target="_blank">Web Session
+                    Cookie</a></td>
+            </tr>
+            <tr>
+                <td>T1078</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078" target="_blank">Valid
+                    Accounts (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1078.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/001" target="_blank">Default
+                    Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/002" target="_blank">Domain
+                    Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/003" target="_blank">Local Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1078.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1078/004" target="_blank">Cloud Accounts</a></td>
+            </tr>
+            <tr>
+                <td>T1497</td>
+                <td><a href="https://attack.mitre.org/techniques/T1497" target="_blank">Virtualization/Sandbox
+                    Evasion (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1497.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1497/001" target="_blank">System Checks</a></td>
+            </tr>
+            <tr>
+                <td>T1497.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1497/002" target="_blank">User Activity
+                    Based Checks</a></td>
+            </tr>
+            <tr>
+                <td>T1497.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1497/003" target="_blank">Time Based
+                    Evasion</a></td>
+            </tr>
+            <tr>
+                <td>T1220</td>
+                <td><a href="https://attack.mitre.org/techniques/T1220" target="_blank">XSL Script Processing</a></td>
+            </tr> 
+            <tr style="background-color: greenyellow;">
+                <td>Credential Access</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1110</td>
+                <td><a href="https://attack.mitre.org/techniques/T1110" target="_blank">Brute
+                    Force (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1110.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1110/001" target="_blank">Password
+                    Guessing</a></td>
+            </tr>
+            <tr>
+                <td>T1110.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1110/002" target="_blank">Password
+                    Cracking</a></td>
+            </tr>
+            <tr>
+                <td>T1110.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1110/003" target="_blank">Password
+                    Spraying</a></td>
+            </tr>
+            <tr>
+                <td>T1110.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1110/004" target="_blank">Credential
+                    Stuffing</a></td>
+            </tr>
+            <tr>
+                <td>T1555</td>
+                <td><a href="https://attack.mitre.org/techniques/T1555" target="_blank">Credentials from
+                    Password
+                    Stores (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1555.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1555/001" target="_blank">Keychain</a></td>
+            </tr>
+            <tr>
+                <td>T1555.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1555/002" target="_blank">Securityd
+                    Memory</a></td>
+            </tr>
+            <tr>
+                <td>T1555.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1555/003" target="_blank">Credentials from
+                    Web Browsers</a></td>
+            </tr>
+            <tr>
+                <td>T1212</td>
+                <td><a href="https://attack.mitre.org/techniques/T1212" target="_blank">Exploitation for Credential Access</a></td>
+            </tr>
+            <tr>
+                <td>T1187</td>
+                <td><a href="https://attack.mitre.org/techniques/T1187" target="_blank">Forced Authentication</a></td>
+            </tr>
+            <tr>
+                <td>T1056</td>
+                <td><a href="https://attack.mitre.org/techniques/T1056" target="_blank">Input
+                    Capture (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1056.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1056/001" target="_blank">Keylogging</a></td>
+            </tr>
+            <tr>
+                <td>T1056.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1056/002" target="_blank">GUI Input
+                    Capture</a></td>
+            </tr>
+            <tr>
+                <td>T1056.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1056/003" target="_blank">Web Portal
+                    Capture</a></td>
+            </tr>
+            <tr>
+                <td>T1056.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1056/004" target="_blank">Credential API
+                    Hooking</a></td>
+            </tr>
+            <tr>
+                <td>T1557</td>
+                <td><a href="https://attack.mitre.org/techniques/T1557" target="_blank">Man-in-the-Middle (1)</a></td>
+            </tr>
+            <tr>
+                <td>T1557.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1557/001" target="_blank">LLMNR/NBT-NS
+                    Poisoning and SMB Relay</a></td>
+            </tr>
+            <tr>
+                <td>T1556</td>
+                <td><a href="https://attack.mitre.org/techniques/T1556" target="_blank">Modify
+                    Authentication
+                    Process (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1556.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1556/001" target="_blank">Domain Controller
+                    Authentication</a></td>
+            </tr>
+            <tr>
+                <td>T1556.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1556/002" target="_blank">Password Filter
+                    DLL</a></td>
+            </tr>
+            <tr>
+                <td>T1556.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1556/003" target="_blank">Pluggable
+                    Authentication Modules</a></td>
+            </tr>
+            <tr>
+                <td>T1040</td>
+                <td><a href="https://attack.mitre.org/techniques/T1040" target="_blank">Network Sniffing</a></td>
+            </tr>
+            <tr>
+                <td>T1003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1003" target="_blank">OS Credential
+                    Dumping (8)</a></td>
+            </tr>
+            <tr>
+                <td>T1003.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1003/001" target="_blank">LSASS Memory</a></td>
+            </tr>
+            <tr>
+                <td>T1003.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1003/002" target="_blank">Security Account
+                    Manager</a></td>
+            </tr>
+            <tr>
+                <td>T1003.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1003/003" target="_blank">NTDS</a></td>
+            </tr>
+            <tr>
+                <td>T1003.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1003/004" target="_blank">LSA Secrets</a></td>
+            </tr>
+            <tr>
+                <td>T1003.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1003/005" target="_blank">Cached Domain
+                    Credentials</a></td>
+            </tr>
+            <tr>
+                <td>T1003.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1003/006" target="_blank">DCSync</a></td>
+            </tr>
+            <tr>
+                <td>T1003.007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1003/007" target="_blank">Proc
+                    Filesystem</a></td>
+            </tr>
+            <tr>
+                <td>T1003.008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1003/008" target="_blank">/etc/passwd and
+                    /etc/shadow</a></td>
+            </tr>
+            <tr>
+                <td>T1528</td>
+                <td><a href="https://attack.mitre.org/techniques/T1528" target="_blank">Steal Application Access Token</a></td>
+            </tr>
+            <tr>
+                <td>T1558</td>
+                <td><a href="https://attack.mitre.org/techniques/T1558" target="_blank">Steal or Forge
+                    Kerberos
+                    Tickets (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1558.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1558/001" target="_blank">Golden Ticket</a></td>
+            </tr>
+            <tr>
+                <td>T1558.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1558/002" target="_blank">Silver Ticket</a></td>
+            </tr>
+            <tr>
+                <td>T1558.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1558/003" target="_blank">Kerberoasting</a></td>
+            </tr>
+            <tr>
+                <td>T1539</td>
+                <td><a href="https://attack.mitre.org/techniques/T1539" target="_blank">Steal Web Session Cookie</a></td>
+            </tr>
+            <tr>
+                <td>T1111</td>
+                <td><a href="https://attack.mitre.org/techniques/T1111" target="_blank">Two-Factor Authentication Interception</a></td>
+            </tr>
+            <tr>
+                <td>T1552</td>
+                <td><a href="https://attack.mitre.org/techniques/T1552" target="_blank">Unsecured
+                    Credentials (6)</a></td>
+            </tr>
+            <tr>
+                <td>T1552.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1552/001" target="_blank">Credentials In
+                    Files</a></td>
+            </tr>
+            <tr>
+                <td>T1552.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1552/002" target="_blank">Credentials in
+                    Registry</a></td>
+            </tr>
+            <tr>
+                <td>T1552.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1552/003" target="_blank">Bash History</a></td>
+            </tr>
+            <tr>
+                <td>T1552.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1552/004" target="_blank">Private Keys</a></td>
+            </tr>
+            <tr>
+                <td>T1552.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1552/005" target="_blank">Cloud Instance
+                    Metadata API</a></td>
+            </tr>
+            <tr>
+                <td>T1552.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1552/006" target="_blank">Group Policy
+                    Preferences</a></td>
+            </tr>
+            <tr style="background-color: greenyellow;">
+                <td>Discovery</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1087</td>
+                <td><a href="https://attack.mitre.org/techniques/T1087" target="_blank">Account Discovery (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1087.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1087/001" target="_blank">Local Account</a></td>
+            </tr>
+            <tr>
+                <td>T1087.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1087/002" target="_blank">Domain Account</a></td>
+            </tr>
+            <tr>
+                <td>T1087.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1087/003" target="_blank">Email Account</a></td>
+            </tr>
+            <tr>
+                <td>T1087.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1087/004" target="_blank">Cloud Account</a></td>
+            </tr>
+            <tr>
+                <td>T1010</td>
+                <td><a href="https://attack.mitre.org/techniques/T1010" target="_blank">Application Window Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1217</td>
+                <td><a href="https://attack.mitre.org/techniques/T1217" target="_blank">Browser Bookmark Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1538</td>
+                <td><a href="https://attack.mitre.org/techniques/T1538" target="_blank">Cloud Service Dashboard</a></td>
+            </tr>
+            <tr>
+                <td>T1482</td>
+                <td><a href="https://attack.mitre.org/techniques/T1482" target="_blank">Domain Trust Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1083</td>
+                <td><a href="https://attack.mitre.org/techniques/T1083" target="_blank">File and Directory Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1046</td>
+                <td><a href="https://attack.mitre.org/techniques/T1046" target="_blank">Network Service Scanning</a></td>
+            </tr>
+            <tr>
+                <td>T1135</td>
+                <td><a href="https://attack.mitre.org/techniques/T1135" target="_blank">Network Share Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1040</td>
+                <td><a href="https://attack.mitre.org/techniques/T1040" target="_blank">Network Sniffing</a></td>
+            </tr>
+            <tr>
+                <td>T1201</td>
+                <td><a href="https://attack.mitre.org/techniques/T1201" target="_blank">Password Policy Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1120</td>
+                <td><a href="https://attack.mitre.org/techniques/T1120" target="_blank">Peripheral Device
+                    Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1069</td>
+                <td><a href="https://attack.mitre.org/techniques/T1069" target="_blank">Permission Groups Discovery (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1069.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1069/001" target="_blank">Local Groups</a></td>
+            </tr>
+            <tr>
+                <td>T1069.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1069/002" target="_blank">Domain Groups</a></td>
+            </tr>
+            <tr>
+                <td>T1069.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1069/003" target="_blank">Cloud Groups</a></td>
+            </tr>
+            <tr>
+                <td>T1057</td>
+                <td><a href="https://attack.mitre.org/techniques/T1057" target="_blank">Process Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1012</td>
+                <td><a href="https://attack.mitre.org/techniques/T1012" target="_blank">Query Registry</a></td>
+            </tr>
+            <tr>
+                <td>T1018</td>
+                <td><a href="https://attack.mitre.org/techniques/T1018" target="_blank">Remote System Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1518</td>
+                <td><a href="https://attack.mitre.org/techniques/T1518" target="_blank">Software
+                    Discovery (1)</a></td>
+            </tr>
+            <tr>
+                <td>T1518.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1518/001" target="_blank">Security Software Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1082</td>
+                <td><a href="https://attack.mitre.org/techniques/T1082" target="_blank">System Information Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1016</td>
+                <td><a href="https://attack.mitre.org/techniques/T1016" target="_blank">System Network Configuration Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1049</td>
+                <td><a href="https://attack.mitre.org/techniques/T1049" target="_blank">System Network Connections Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1033</td>
+                <td><a href="https://attack.mitre.org/techniques/T1033" target="_blank">System Owner/User Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1007</td>
+                <td><a href="https://attack.mitre.org/techniques/T1007" target="_blank">System Service Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1124</td>
+                <td><a href="https://attack.mitre.org/techniques/T1124" target="_blank">System Time Discovery</a></td>
+            </tr>
+            <tr>
+                <td>T1497</td>
+                <td><a href="https://attack.mitre.org/techniques/T1497" target="_blank">Virtualization/Sandbox Evasion (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1497.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1497/001" target="_blank">System Checks</a></td>
+            </tr>
+            <tr>
+                <td>T1497.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1497/002" target="_blank">User Activity Based Checks</a></td>
+            </tr>
+            <tr>
+                <td>T1497.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1497/003" target="_blank">Time Based Evasion</a></td>
+            </tr>
+            <tr style="background-color: greenyellow;">
+                <td>Lateral Movement</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1210</td>
+                <td><a href="https://attack.mitre.org/techniques/T1210" target="_blank">Exploitation of Remote Services</a></td>
+            </tr>
+            <tr>
+                <td>T1534</td>
+                <td><a href="https://attack.mitre.org/techniques/T1534" target="_blank">Internal Spearphishing</a></td>
+            </tr>
+            <tr>
+                <td>T1570</td>
+                <td><a href="https://attack.mitre.org/techniques/T1570" target="_blank">Lateral Tool Transfer</a></td>
+            </tr>
+            <tr>
+                <td>T1563</td>
+                <td><a href="https://attack.mitre.org/techniques/T1563" target="_blank">Remote Service
+                    Session
+                    Hijacking (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1563.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1563/001" target="_blank">SSH Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1563.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1563/002" target="_blank">RDP Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1021</td>
+                <td><a href="https://attack.mitre.org/techniques/T1021" target="_blank">Remote
+                    Services (6)</a></td>
+            </tr>
+            <tr>
+                <td>T1021.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1021/001" target="_blank">Remote Desktop
+                    Protocol</a></td>
+            </tr>
+            <tr>
+                <td>T1021.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1021/002" target="_blank">SMB/Windows Admin
+                    Shares</a></td>
+            </tr>
+            <tr>
+                <td>T1021.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1021/003" target="_blank">Distributed
+                    Component Object Model</a></td>
+            </tr>
+            <tr>
+                <td>T1021.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1021/004" target="_blank">SSH</a></td>
+            </tr>
+            <tr>
+                <td>T1021.005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1021/005" target="_blank">VNC</a></td>
+            </tr>
+            <tr>
+                <td>T1021.006</td>
+                <td><a href="https://attack.mitre.org/techniques/T1021/006" target="_blank">Windows Remote
+                    Management</a></td>
+            </tr>
+            <tr>
+                <td>T1091</td>
+                <td><a href="https://attack.mitre.org/techniques/T1091" target="_blank">Replication Through Removable Media</a></td>
+            </tr>
+            <tr>
+                <td>T1072</td>
+                <td><a href="https://attack.mitre.org/techniques/T1072" target="_blank">Software Deployment Tools</a></td>
+            </tr>
+            <tr>
+                <td>T1080</td>
+                <td><a href="https://attack.mitre.org/techniques/T1080" target="_blank">Taint Shared Content</a></td>
+            </tr>
+            <tr>
+                <td>T1550</td>
+                <td><a href="https://attack.mitre.org/techniques/T1550" target="_blank">Use Alternate
+                    Authentication
+                    Material (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1550.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1550/001" target="_blank">Application Access
+                    Token</a></td>
+            </tr>
+            <tr>
+                <td>T1550.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1550/002" target="_blank">Pass the Hash</a></td>
+            </tr>
+            <tr>
+                <td>T1550.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1550/003" target="_blank">Pass the
+                    Ticket</a></td>
+            </tr>
+            <tr>
+                <td>T1550.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1550/004" target="_blank">Web Session
+                    Cookie</a></td>
+            </tr>
+            <tr>
+            <tr style="background-color: greenyellow;">
+                <td>Collection</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1560</td>
+                <td><a href="https://attack.mitre.org/techniques/T1560" target="_blank">Archive Collected Data (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1560.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1560/001" target="_blank">Archive via Utility</a></td>
+            </tr>
+            <tr>
+                <td>T1560.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1560/002" target="_blank">Archive via Library</a></td>
+            </tr>
+            <tr>
+                <td>T1560.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1560/003" target="_blank">Archive via Custom Method</a></td>
+            </tr>
+            <tr>
+                <td>T1123</td>
+                <td><a href="https://attack.mitre.org/techniques/T1123" target="_blank">Audio Capture</a></td>
+            </tr>
+            <tr>
+                <td>T1119</td>
+                <td><a href="https://attack.mitre.org/techniques/T1119" target="_blank">Automated Collection</a></td>
+            </tr>
+            <tr>
+                <td>T1115</td>
+                <td><a href="https://attack.mitre.org/techniques/T1115" target="_blank">Clipboard Data</a></td>
+            </tr>
+            <tr>
+                <td>T1530</td>
+                <td><a href="https://attack.mitre.org/techniques/T1530" target="_blank">Data from Cloud Storage Object</a></td>
+            </tr>
+            <tr>
+                <td>T1213</td>
+                <td><a href="https://attack.mitre.org/techniques/T1213" target="_blank">Data from Information Repositories (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1213.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1213/001" target="_blank">Confluence</a></td>
+            </tr>
+            <tr>
+                <td>T1213.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1213/002" target="_blank">Sharepoint</a></td>
+            </tr>
+            <tr>
+                <td>T1005</td>
+                <td><a href="https://attack.mitre.org/techniques/T1005" target="_blank">Data from Local System</a></td>
+            </tr>
+            <tr>
+                <td>T1039</td>
+                <td><a href="https://attack.mitre.org/techniques/T1039" target="_blank">Data from Network Shared Drive</a></td>
+            </tr>
+            <tr>
+                <td>T1025</td>
+                <td><a href="https://attack.mitre.org/techniques/T1025" target="_blank">Data from Removable Media</a></td>
+            </tr>
+            <tr>
+                <td>T1074</td>
+                <td><a href="https://attack.mitre.org/techniques/T1074" target="_blank">Data Staged (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1074.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1074/001" target="_blank">Local Data Staging</a></td>
+            </tr>
+            <tr>
+                <td>T1074.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1074/002" target="_blank">Remote Data Staging</a></td>
+            </tr>
+            <tr>
+                <td>T1114</td>
+                <td><a href="https://attack.mitre.org/techniques/T1114" target="_blank">Email Collection (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1114.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1114/001" target="_blank">Local Email Collection</a></td>
+            </tr>
+            <tr>
+                <td>T1114.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1114/002" target="_blank">Remote Email Collection</a></td>
+            </tr>
+            <tr>
+                <td>T1114.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1114/003" target="_blank">Email Forwarding Rule</a></td>
+            </tr>
+            <tr>
+                <td>T1056</td>
+                <td><a href="https://attack.mitre.org/techniques/T1056" target="_blank">Input Capture (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1056.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1056/001" target="_blank">Keylogging</a></td>
+            </tr>
+            <tr>
+                <td>T1056.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1056/002" target="_blank">GUI Input Capture</a></td>
+            </tr>
+            <tr>
+                <td>T1056.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1056/003" target="_blank">Web Portal Capture</a></td>
+            </tr>
+            <tr>
+                <td>T1056.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1056/004" target="_blank">Credential API Hooking</a></td>
+            </tr>
+            <tr>
+                <td>T1185</td>
+                <td><a href="https://attack.mitre.org/techniques/T1185" target="_blank">Man in the Browser</a></td>
+            </tr>
+            <tr>
+                <td>T1557</td>
+                <td><a href="https://attack.mitre.org/techniques/T1557" target="_blank">Man-in-the-Middle (1)</a></td>
+            </tr>
+            <tr>
+                <td>T1557.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1557/001" target="_blank">LLMNR/NBT-NS Poisoning and SMB Relay</a></td>
+            </tr>
+            <tr>
+                <td>T1113</td>
+                <td><a href="https://attack.mitre.org/techniques/T1113" target="_blank">Screen Capture</a></td>
+            </tr>
+            <tr>
+                <td>T1125</td>
+                <td><a href="https://attack.mitre.org/techniques/T1125" target="_blank">Video Capture</a></td>
+            </tr>
+            <tr style="background-color: greenyellow;">
+                <td>Command and Control</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1071</td>
+                <td><a href="https://attack.mitre.org/techniques/T1071" target="_blank">Application Layer Protocol (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1071.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1071/001" target="_blank">Web Protocols</a></td>
+            </tr>
+            <tr>
+                <td>T1071.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1071/002" target="_blank">File Transfer Protocols</a></td>
+            </tr>
+            <tr>
+                <td>T1071.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1071/003" target="_blank">Mail Protocols</a></td>
+            </tr>
+            <tr>
+                <td>T1071.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1071/004" target="_blank">DNS</a></td>
+            </tr>
+            <tr>
+                <td>T1092</td>
+                <td><a href="https://attack.mitre.org/techniques/T1092" target="_blank">Communication Through Removable Media</a></td>
+            </tr>
+            <tr>
+                <td>T1132</td>
+                <td><a href="https://attack.mitre.org/techniques/T1132" target="_blank">Data Encoding (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1132.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1132/001" target="_blank">Standard Encoding</a></td>
+            </tr>
+            <tr>
+                <td>T1132.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1132/002" target="_blank">Non-Standard Encoding</a></td>
+            </tr>
+            <tr>
+                <td>T1001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1001" target="_blank">Data Obfuscation</a></td>
+            </tr>
+            <tr>
+                <td>T1001.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1001/001" target="_blank">Junk Data</a></td>
+            </tr>
+            <tr>
+                <td>T1001.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1001/002" target="_blank">Steganography</a></td>
+            </tr>
+            <tr>
+                <td>T1001.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1001/003" target="_blank">Protocol Impersonation</a></td>
+            </tr>
+            <tr>
+                <td>T1568</td>
+                <td><a href="https://attack.mitre.org/techniques/T1568" target="_blank">Dynamic Resolution (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1568.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1568/001" target="_blank">Fast Flux DNS</a></td>
+            </tr>
+            <tr>
+                <td>T1568.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1568/002" target="_blank">Domain Generation Algorithms</a></td>
+            </tr>
+            <tr>
+                <td>T1568.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1568/003" target="_blank">DNS Calculation</a></td>
+            </tr>
+            <tr>
+                <td>T1573</td>
+                <td><a href="https://attack.mitre.org/techniques/T1573" target="_blank">Encrypted Channel (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1573.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1573/001" target="_blank">Symmetric Cryptography</a></td>
+            </tr>
+            <tr>
+                <td>T1573.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1573/002" target="_blank">Asymmetric Cryptography</a></td>
+            </tr>
+            <tr>
+                <td>T1008</td>
+                <td><a href="https://attack.mitre.org/techniques/T1008" target="_blank">Fallback Channels</a></td>
+            </tr>
+            <tr>
+                <td>T1105</td>
+                <td><a href="https://attack.mitre.org/techniques/T1105" target="_blank">Ingress Tool Transfer</a></td>
+            </tr>
+            <tr>
+                <td>T1104</td>
+                <td><a href="https://attack.mitre.org/techniques/T1104" target="_blank">Multi-Stage Channels</a></td>
+            </tr>
+            <tr>
+                <td>T1095</td>
+                <td><a href="https://attack.mitre.org/techniques/T1095" target="_blank">Non-Application Layer Protocol</a></td>
+            </tr>
+            <tr>
+                <td>T1571</td>
+                <td><a href="https://attack.mitre.org/techniques/T1571" target="_blank">Non-Standard Port</a></td>
+            </tr>
+            <tr>
+                <td>T1572</td>
+                <td><a href="https://attack.mitre.org/techniques/T1572" target="_blank">Protocol Tunneling</a></td>
+            </tr>
+            <tr>
+                <td>T1090</td>
+                <td><a href="https://attack.mitre.org/techniques/T1090" target="_blank">Proxy (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1090.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1090/001" target="_blank">Internal Proxy</a></td>
+            </tr>
+            <tr>
+                <td>T1090.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1090/002" target="_blank">External Proxy</a></td>
+            </tr>
+            <tr>
+                <td>T1090.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1090/003" target="_blank">Multi-hop Proxy</a></td>
+            </tr>
+            <tr>
+                <td>T1090.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1090/004" target="_blank">Domain Fronting</a></td>
+            </tr>
+            <tr>
+                <td>T1219</td>
+                <td><a href="https://attack.mitre.org/techniques/T1219" target="_blank">Remote Access Software</a></td>
+            </tr>
+            <tr>
+                <td>T1205</td>
+                <td><a href="https://attack.mitre.org/techniques/T1205" target="_blank">Traffic Signaling (1)</a></td>
+            </tr>
+            <tr>
+                <td>T1205.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1205/001" target="_blank">Port Knocking</a></td>
+            </tr>
+            <tr>
+                <td>T1102</td>
+                <td><a href="https://attack.mitre.org/techniques/T1102" target="_blank">Web Service (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1102.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1102/001" target="_blank">Dead Drop Resolver</a></td>
+            </tr>
+            <tr>
+                <td>T1102.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1102/002" target="_blank">Bidirectional Communication</a></td>
+            </tr>
+            <tr>
+                <td>T1102.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1102/003" target="_blank">One-Way Communication</a></td>
+            </tr>
+            <tr style="background-color: greenyellow;">
+                <td>Exfiltartion</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1020</td>
+                <td><a href="https://attack.mitre.org/techniques/T1020" target="_blank">Automated Exfiltration</a></td>
+            </tr>
+            <tr>
+                <td>T1030</td>
+                <td><a href="https://attack.mitre.org/techniques/T1030" target="_blank">Data Transfer Size Limits</a></td>
+            </tr>
+            <tr>
+                <td>T1048</td>
+                <td><a href="https://attack.mitre.org/techniques/T1048" target="_blank">Exfiltration Over
+                    Alternative
+                    Protocol (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1048.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1048/001" target="_blank">Exfiltration Over Symmetric Encrypted Non-C2 Protocol</a></td>
+            </tr>
+            <tr>
+                <td>T1048.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1048/002" target="_blank">Exfiltration Over Asymmetric Encrypted Non-C2 Protocol</a></td>
+            </tr>
+            <tr>
+                <td>T1048.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1048/003" target="_blank">Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol</a></td>
+            </tr>
+            <tr>
+                <td>T1041</td>
+                <td><a href="https://attack.mitre.org/techniques/T1041" target="_blank">Exfiltration Over C2 Channel</a></td>
+            </tr>
+            <tr>
+                <td>T1011</td>
+                <td><a href="https://attack.mitre.org/techniques/T1011" target="_blank">Exfiltration Over Other Network Medium (1)</a></td>
+            </tr>
+            <tr>
+                <td>T1011.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1011/001" target="_blank">Exfiltration Over Bluetooth</a></td>
+            </tr>
+            <tr>
+                <td>T1052</td>
+                <td><a href="https://attack.mitre.org/techniques/T1052" target="_blank">Exfiltration Over Physical Medium (1)</a></td>
+            </tr>
+            <tr>
+                <td>T1052.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1052/001" target="_blank">Exfiltration over USB</a></td>
+            </tr>
+            <tr>
+                <td>T1567</td>
+                <td><a href="https://attack.mitre.org/techniques/T1567" target="_blank">Exfiltration Over Web Service (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1567.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1567/001" target="_blank">Exfiltration to Code Repository</a></td>
+            </tr>
+            <tr>
+                <td>T1567.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1567/002" target="_blank">Exfiltration to Cloud Storage</a></td>
+            </tr>
+            <tr>
+                <td>T1029</td>
+                <td><a href="https://attack.mitre.org/techniques/T1029" target="_blank">Scheduled Transfer</a></td>
+            </tr>
+            <tr>
+                <td>T1537</td>
+                <td><a href="https://attack.mitre.org/techniques/T1537" target="_blank">Transfer Data to Cloud
+                    Account</a></td>
+            </tr>
+            <tr style="background-color: greenyellow;">
+                <td>Imapct</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>T1531</td>
+                <td><a href="https://attack.mitre.org/techniques/T1531" target="_blank">Account Access Removal</a></td>
+            </tr>
+            <tr>
+                <td>T1485</td>
+                <td><a href="https://attack.mitre.org/techniques/T1485" target="_blank">Data Destruction</a></td>
+            </tr>
+            <tr>
+                <td>T1486</td>
+                <td><a href="https://attack.mitre.org/techniques/T1486" target="_blank">Data Encrypted for Impact</a></td>
+            </tr>
+            <tr>
+                <td>T1565</td>
+                <td><a href="https://attack.mitre.org/techniques/T1565" target="_blank">Data Manipulation (3)</a></td>
+            </tr>
+            <tr>
+                <td>T1565.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1565/001" target="_blank">Stored Data Manipulation</a></td>
+            </tr>
+            <tr>
+                <td>T1565.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1565/002" target="_blank">Transmitted Data Manipulation</a></td>
+            </tr>
+            <tr>
+                <td>T1565.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1565/003" target="_blank">Runtime Data Manipulation</a></td>
+            </tr>
+            <tr>
+                <td>T1491</td>
+                <td><a href="https://attack.mitre.org/techniques/T1491" target="_blank">Defacement (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1491.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1491/001" target="_blank">Internal Defacement</a></td>
+            </tr>
+            <tr>
+                <td>T1491.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1491/002" target="_blank">External Defacement</a></td>
+            </tr>
+            <tr>
+                <td>T1561</td>
+                <td><a href="https://attack.mitre.org/techniques/T1561" target="_blank">Disk Wipe (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1561.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1561/001" target="_blank">Disk Content Wipe</a></td>
+            </tr>
+            <tr>
+                <td>T1561.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1561/002" target="_blank">Disk Structure Wipe</a></td>
+            </tr>
+            <tr>
+                <td>T1499</td>
+                <td><a href="https://attack.mitre.org/techniques/T1499" target="_blank">Endpoint Denial of Service (4)</a></td>
+            </tr>
+            <tr>
+                <td>T1499.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1499/001" target="_blank">OS Exhaustion Flood</a></td>
+            </tr>
+            <tr>
+                <td>T1499.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1499/002" target="_blank">Service Exhaustion Flood</a></td>
+            </tr>
+            <tr>
+                <td>T1499.003</td>
+                <td><a href="https://attack.mitre.org/techniques/T1499/003" target="_blank">Application Exhaustion Flood</a></td>
+            </tr>
+            <tr>
+                <td>T1499.004</td>
+                <td><a href="https://attack.mitre.org/techniques/T1499/004" target="_blank">Application or System Exploitation></a></td>
+            </tr>
+            <tr>
+                <td>T1495</td>
+                <td><a href="https://attack.mitre.org/techniques/T1495" target="_blank">Firmware Corruption</a></td>
+            </tr>
+            <tr>
+                <td>T1490</td>
+                <td><a href="https://attack.mitre.org/techniques/T1490" target="_blank">Inhibit System Recovery</a></td>
+            </tr>
+            <tr>
+                <td>T1498</td>
+                <td><a href="https://attack.mitre.org/techniques/T1498" target="_blank">Network Denial of Service (2)</a></td>
+            </tr>
+            <tr>
+                <td>T1498.001</td>
+                <td><a href="https://attack.mitre.org/techniques/T1498/001" target="_blank">Direct Network Flood</a></td>
+            </tr>
+            <tr>
+                <td>T1498.002</td>
+                <td><a href="https://attack.mitre.org/techniques/T1498/002" target="_blank">Reflection Amplification</a></td>
+            </tr>
+            <tr>
+                <td>T1496</td>
+                <td><a href="https://attack.mitre.org/techniques/T1496" target="_blank">Resource Hijacking</a></td>
+            </tr>
+            <tr>
+                <td>T1489</td>
+                <td><a href="https://attack.mitre.org/techniques/T1489" target="_blank">Service Stop</a></td>
+            </tr>
+            <tr>
+                <td>T1529</td>
+                <td><a href="https://attack.mitre.org/techniques/T1529" target="_blank">System Shutdown/Reboot</a></td>
+            </tr>
+            <tr>
+        </tbody>
+    </table>
+
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, table, cells, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tableIdContents");
+            cells = table.getElementsByTagName('tr');
+            console.log(cells);
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < cells.length; i++) {
+                txtValue = cells[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    cells[i].style.display = "";
+                } else {
+                    cells[i].style.display = "none";
+                }
+                cells[0].style.display = "";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

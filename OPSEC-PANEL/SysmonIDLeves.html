@@ -1,0 +1,143 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>SysmonLeves</title>
+    <style type="text/css">
+        #tableIdContents {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        #tableIdContents td, #tableIdContents th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+
+        #tableIdContents tr:nth-child(even){background-color: #f2f2f2;}
+
+        #tableIdContents tr:hover {background-color: #ddd;}
+
+        #tableIdContents th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #302e8d;
+        color: white;
+        }
+
+    </style>
+</head>
+    
+<body lang="en-us" dir="ltr">
+    <table id="tableIdContents">
+        <colgroup>
+        <col style="width: 4%" />
+        <col style="width: 22%" />
+        <col style="width: 74%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Level</p></th>
+        <th class="head"><p>Title</p></th>
+        <th class="head"><p>Description</p></th>
+        </tr>
+        </thead>
+        
+        </tr>
+        <tr class="row-odd"><td style="text-align: center;"><p>1</p></td>
+        <td><p>ProcessCreate</p></td>
+		<td><p>PROCESS CREATION</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>2</p></td>
+		<td><p>FileCreateTime</p></td>
+        <td><p>FILE CREATION TIME RETROACTIVELY CHANGED IN THE FILESYSTEM</p></td>
+		</tr>
+        <tr class="row-odd"><td style="text-align: center;"><p>3</p></td>
+		<td><p>NetworkConnect</p></td>
+        <td><p>NETWORK CONNECTION INITIATED</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>4</p></td>
+		<td><p>n/a</p></td>
+        <td><p>RESERVED FOR SYSMON STATUS MESSAGES, THIS LINE IS INCLUDED FOR DOCUMENTATION PURPOSES ONLY</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>5</p></td>
+		<td><p>ProcessTerminate</p></td>
+        <td><p>PROCESS ENDED</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>6</p></td>
+		<td><p>DriverLoad</p></td>
+        <td><p>DRIVER LOADED INTO KERNEL</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>7</p></td>
+		<td><p>ImageLoad</p></td>
+        <td><p>DLL (IMAGE) LOADED BY PROCESS</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>8</p></td>
+		<td><p>CreateRemoteThread</p></td>
+        <td><p>REMOTE THREAD CREATED</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>9</p></td>
+		<td><p>RawAccessRead</p></td>
+        <td><p>RAW DISK ACCESS</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>10</p></td>
+		<td><p>ProcessAccess</p></td>
+        <td><p>INTER-PROCESS ACCESS</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>11</p></td>
+		<td><p>FileCreate</p></td>
+        <td><p>FILE CREATED</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>12</p></td>
+		<td><p>RegistryEvent</p></td>
+        <td><p>Registry object added or deleted</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>13</p></td>
+		<td><p>RegistryEvent</p></td>
+        <td><p>Registry value set</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>14</p></td>
+		<td><p>RegistryEvent</p></td>
+        <td><p>Registry object renamed</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>15</p></td>
+		<td><p>FileCreateStreamHash</p></td>
+        <td><p>ALTERNATE DATA STREAM CREATED</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>16</p></td>
+		<td><p> n/a</p></td>
+        <td><p>Sysmon configuration change (cannot be filtered)</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>17</p></td>
+		<td><p>PipeEvent</p></td>
+        <td><p>Named pipe created</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>18</p></td>
+		<td><p>PipeEvent</p></td>
+        <td><p>Named pipe connected</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>19</p></td>
+		<td><p>WmiEvent</p></td>
+        <td><p>WMI filter</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>20</p></td>
+		<td><p>WmiEvent</p></td>
+        <td><p>WMI consumer</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>21</p></td>
+		<td><p>WmiEvent</p></td>
+        <td><p>WMI consumer filter</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>22</p></td>
+		<td><p>FileCreateStreamHash</p></td>
+        <td><p>DNS query</p></td>
+        </tr>
+		<tr class="row-odd"><td style="text-align: center;"><p>23</p></td>
+		<td><p>FileCreateStreamHash</p></td>
+        <td><p>File Delete</p></td>
+        </tr>
+		</tbody>
+        </table>
+</body>
+</html>

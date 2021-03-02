@@ -1,0 +1,332 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>SysmonIDLevels12</title>
+    <style type="text/css">
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+        
+        #tableIdContents {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        #myInput {
+        background-image: url('searchicon.png');
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 20%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 6px;
+        }
+
+        #tableIdContents td, #tableIdContents th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+
+        #tableIdContents tr:nth-child(even){background-color: #f2f2f2;}
+
+        #tableIdContents tr:hover {background-color: #ddd;}
+
+        #tableIdContents th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #302e8d;
+        color: white;
+        }
+
+    </style>
+</head>
+    
+<body lang="en-us" dir="ltr">
+    <div style="background-color: #302e8d;">
+        <input type="number" id="myInput" onkeyup="myFunction()" placeholder="Search IDs">
+    </div>
+    <table id="tableIdContents">
+        <thead>
+        <tr>
+        <th><strong>Event ID</strong></th>
+        <th><strong>Level</strong></th>
+        <th><strong>Criticality</strong></th>
+        <th><strong>Event Summary</strong></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>255000</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Powershell or Script Execution</td>
+        </tr>
+        <tr>
+        <td>255002</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Possible Mimikatz Running In-Memory Detection</td>
+        </tr>
+        <tr>
+        <td>255003</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Possible Mimikatz In-Memory Detection</td>
+        </tr>
+	   <tr>
+        <td>255005</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detection a Windows command line executable started from MSHTA</td>
+        </tr>
+		<tr>
+        <td>255007</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Possible Office Macro Started : $(win.eventdata.image)</td>
+        </tr>
+		<tr>
+        <td>255008</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Microsoft Office Product Spawning Windows Shell</td>
+        </tr>
+		<tr>
+        <td>255010</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Password Dumper Remote Thread in LSASS</td>
+        </tr>
+		<tr>
+        <td>255011</td>
+        <td>12</td>
+        <td>High</td>
+        <td>PowerShell scripts that download content from the Internet</td>
+        </tr>
+		<tr>
+        <td>255016</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects suspicious PowerShell invocation command parameters</td>
+        </tr>
+		<tr>
+        <td>255018</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects a rundll32 that communicates with public IP addresses</td>
+        </tr>
+		<tr>
+        <td>255021</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detetcs a suspicious Microsoft certutil execution with sub commands</td>
+        </tr>
+		<tr>
+        <td>255023</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects a suspicious command line execution that includes an URL and AppData</td>
+        </tr>
+		<tr>
+        <td>255025</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects suspicious Rundll32 execution from control.exe as used by Equation Group and Exploit Kits</td>
+        </tr>
+		<tr>
+        <td>255026</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects a driver load from a temporary directory</td>
+        </tr>
+		<tr>
+        <td>255027</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects process starts of binaries from a suspicious folder</td>
+        </tr>
+		<tr>
+        <td>255029</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Processes started by MMC could by a sign of lateral movement using MMC application COM object</td>
+        </tr>
+		<tr>
+        <td>255031</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects execution of Net.exe, whether suspicious or benign</td>
+        </tr>
+		<tr>
+        <td>255033</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects suspicious powershell invocations from interpreters or unusual programs</td>
+        </tr>
+		<tr>
+        <td>255034</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects suspicious command line activity on Windows systems</td>
+        </tr>
+		<tr>
+        <td>255036</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects various anomalies in relation to regsvr32.exe</td>
+        </tr>
+		<tr>
+        <td>255037</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects various anomalies in relation to regsvr32.exe</td>
+        </tr>
+		<tr>
+        <td>255038</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects various anomalies in relation to regsvr32.exe</td>
+        </tr>
+		<tr>
+        <td>255040</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects the creation of scheduled tasks in user session</td>
+        </tr>
+		<tr>
+        <td>255041</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects suspicious file execution by wscript and cscript</td>
+        </tr>
+		<tr>
+        <td>255044</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects a suspicious scvhost process start</td>
+        </tr>
+		<tr>
+        <td>255045</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects suspicious commands that could be related to activity that uses volume shadow copy</td>
+        </tr>
+		<tr>
+        <td>255047</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects WMI executing suspicious commands</td>
+        </tr>
+		<tr>
+        <td>255048</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects a JAVA process running with remote debugging allowing more than just localhost to connect</td>
+        </tr>
+		<tr>
+        <td>255050</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects Winword starting uncommon sub process csc.exe as used in exploits</td>
+        </tr>
+		<tr>
+        <td>255054</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects usage of bitsadmin downloading a file</td>
+        </tr>
+		<tr>
+        <td>255056</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects a suspicious command line execution that includes an URL and AppData</td>
+        </tr>
+		<tr>
+        <td>255057</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Processes started by MMC could by a sign of lateral movement using MMC application COM object</td>
+        </tr>
+		<tr>
+        <td>255058</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects suspicious powershell invocations from interpreters or unusual programs</td>
+        </tr>
+		<tr>
+        <td>255066</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Mimikatz Detection Image: $(win.eventdata.parentimage)</td>
+        </tr>
+		<tr>
+        <td>255067</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects a suspicious command line execution that includes an URL and AppData</td>
+        </tr>
+		<tr>
+        <td>255068</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects a suspicious command line execution that includes an URL and AppData</td>
+        </tr>
+		<tr>
+        <td>255069</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects a rundll32 that communicates with public IP addresses</td>
+        </tr>
+		<tr>
+        <td>255070</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects a rundll32 that communicates with public IP addresses</td>
+        </tr>
+		<tr>
+        <td>255071</td>
+        <td>12</td>
+        <td>High</td>
+        <td>Detects a suspicious command line execution that includes an URL and AppData</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, table, cells, a, i, txtValue;
+          input = document.getElementById('myInput');
+          filter = input.value.toUpperCase();
+          table = document.getElementById("tableIdContents");
+          cells = table.getElementsByTagName('tr');
+          console.log(cells);
+          
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < cells.length; i++) {
+            txtValue = cells[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                cells [i].style.display = "";
+            } else {
+                cells [i].style.display = "none";
+            }
+            cells[0].style.display = "";
+          }
+
+        }
+    </script>
+</body>
+</html>

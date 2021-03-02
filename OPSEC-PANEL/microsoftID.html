@@ -1,0 +1,2372 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>microsoftID</title>
+    <style type="text/css">
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+        
+        #tableIdContents {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        #myInput {
+        background-image: url('searchicon.png');
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 20%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 6px;
+        }
+
+        #tableIdContents td, #tableIdContents th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+
+        #tableIdContents tr:nth-child(even){background-color: #f2f2f2;}
+
+        #tableIdContents tr:hover {background-color: #ddd;}
+
+        #tableIdContents th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #302e8d;
+        color: white;
+        }
+
+    </style>
+</head>
+    
+<body lang="en-us" dir="ltr">
+    <div style="background-color: #302e8d;">
+        <input type="number" id="myInput" onkeyup="myFunction()" placeholder="Search IDs">
+    </div>
+    <table id="tableIdContents">
+        <thead>
+        <tr>
+        <th><strong>Current Windows Event ID</strong></th>
+        <th><strong>Legacy Windows Event ID</strong></th>
+        <th><strong>Potential Criticality</strong></th>
+        <th><strong>Event Summary</strong></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>4618</td>
+        <td>N/A</td>
+        <td>High</td>
+        <td>A monitored security event pattern has occurred.</td>
+        </tr>
+        <tr>
+        <td>4649</td>
+        <td>N/A</td>
+        <td>High</td>
+        <td>A replay attack was detected. May be a harmless false positive due to misconfiguration error.</td>
+        </tr>
+        <tr>
+        <td>4719</td>
+        <td>612</td>
+        <td>High</td>
+        <td>System audit policy was changed.</td>
+        </tr>
+        <tr>
+        <td>4765</td>
+        <td>N/A</td>
+        <td>High</td>
+        <td>SID History was added to an account.</td>
+        </tr>
+        <tr>
+        <td>4766</td>
+        <td>N/A</td>
+        <td>High</td>
+        <td>An attempt to add SID History to an account failed.</td>
+        </tr>
+        <tr>
+        <td>4794</td>
+        <td>N/A</td>
+        <td>High</td>
+        <td>An attempt was made to set the Directory Services Restore Mode.</td>
+        </tr>
+        <tr>
+        <td>4897</td>
+        <td>801</td>
+        <td>High</td>
+        <td>Role separation enabled:</td>
+        </tr>
+        <tr>
+        <td>4964</td>
+        <td>N/A</td>
+        <td>High</td>
+        <td>Special groups have been assigned to a new logon.</td>
+        </tr>
+        <tr>
+        <td>5124</td>
+        <td>N/A</td>
+        <td>High</td>
+        <td>A security setting was updated on the OCSP Responder Service</td>
+        </tr>
+        <tr>
+        <td>N/A</td>
+        <td>550</td>
+        <td>Medium to High</td>
+        <td>Possible denial-of-service (DoS) attack</td>
+        </tr>
+        <tr>
+        <td>1102</td>
+        <td>517</td>
+        <td>Medium to High</td>
+        <td>The audit log was cleared</td>
+        </tr>
+        <tr>
+        <td>4621</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Administrator recovered system from CrashOnAuditFail. Users who are not administrators will now be allowed to log on. Some auditable activity might not have been recorded.</td>
+        </tr>
+        <tr>
+        <td>4675</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>SIDs were filtered.</td>
+        </tr>
+        <tr>
+        <td>4692</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Backup of data protection master key was attempted.</td>
+        </tr>
+        <tr>
+        <td>4693</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Recovery of data protection master key was attempted.</td>
+        </tr>
+        <tr>
+        <td>4706</td>
+        <td>610</td>
+        <td>Medium</td>
+        <td>A new trust was created to a domain.</td>
+        </tr>
+        <tr>
+        <td>4713</td>
+        <td>617</td>
+        <td>Medium</td>
+        <td>Kerberos policy was changed.</td>
+        </tr>
+        <tr>
+        <td>4714</td>
+        <td>618</td>
+        <td>Medium</td>
+        <td>Encrypted data recovery policy was changed.</td>
+        </tr>
+        <tr>
+        <td>4715</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>The audit policy (SACL) on an object was changed.</td>
+        </tr>
+        <tr>
+        <td>4716</td>
+        <td>620</td>
+        <td>Medium</td>
+        <td>Trusted domain information was modified.</td>
+        </tr>
+        <tr>
+        <td>4724</td>
+        <td>628</td>
+        <td>Medium</td>
+        <td>An attempt was made to reset an account's password.</td>
+        </tr>
+        <tr>
+        <td>4727</td>
+        <td>631</td>
+        <td>Medium</td>
+        <td>A security-enabled global group was created.</td>
+        </tr>
+        <tr>
+        <td>4735</td>
+        <td>639</td>
+        <td>Medium</td>
+        <td>A security-enabled local group was changed.</td>
+        </tr>
+        <tr>
+        <td>4737</td>
+        <td>641</td>
+        <td>Medium</td>
+        <td>A security-enabled global group was changed.</td>
+        </tr>
+        <tr>
+        <td>4739</td>
+        <td>643</td>
+        <td>Medium</td>
+        <td>Domain Policy was changed.</td>
+        </tr>
+        <tr>
+        <td>4754</td>
+        <td>658</td>
+        <td>Medium</td>
+        <td>A security-enabled universal group was created.</td>
+        </tr>
+        <tr>
+        <td>4755</td>
+        <td>659</td>
+        <td>Medium</td>
+        <td>A security-enabled universal group was changed.</td>
+        </tr>
+        <tr>
+        <td>4764</td>
+        <td>667</td>
+        <td>Medium</td>
+        <td>A security-disabled group was deleted</td>
+        </tr>
+        <tr>
+        <td>4764</td>
+        <td>668</td>
+        <td>Medium</td>
+        <td>A group's type was changed.</td>
+        </tr>
+        <tr>
+        <td>4780</td>
+        <td>684</td>
+        <td>Medium</td>
+        <td>The ACL was set on accounts which are members of administrators groups.</td>
+        </tr>
+        <tr>
+        <td>4816</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>RPC detected an integrity violation while decrypting an incoming message.</td>
+        </tr>
+        <tr>
+        <td>4865</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>A trusted forest information entry was added.</td>
+        </tr>
+        <tr>
+        <td>4866</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>A trusted forest information entry was removed.</td>
+        </tr>
+        <tr>
+        <td>4867</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>A trusted forest information entry was modified.</td>
+        </tr>
+        <tr>
+        <td>4868</td>
+        <td>772</td>
+        <td>Medium</td>
+        <td>The certificate manager denied a pending certificate request.</td>
+        </tr>
+        <tr>
+        <td>4870</td>
+        <td>774</td>
+        <td>Medium</td>
+        <td>Certificate Services revoked a certificate.</td>
+        </tr>
+        <tr>
+        <td>4882</td>
+        <td>786</td>
+        <td>Medium</td>
+        <td>The security permissions for Certificate Services changed.</td>
+        </tr>
+        <tr>
+        <td>4885</td>
+        <td>789</td>
+        <td>Medium</td>
+        <td>The audit filter for Certificate Services changed.</td>
+        </tr>
+        <tr>
+        <td>4890</td>
+        <td>794</td>
+        <td>Medium</td>
+        <td>The certificate manager settings for Certificate Services changed.</td>
+        </tr>
+        <tr>
+        <td>4892</td>
+        <td>796</td>
+        <td>Medium</td>
+        <td>A property of Certificate Services changed.</td>
+        </tr>
+        <tr>
+        <td>4896</td>
+        <td>800</td>
+        <td>Medium</td>
+        <td>One or more rows have been deleted from the certificate database.</td>
+        </tr>
+        <tr>
+        <td>4906</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>The CrashOnAuditFail value has changed.</td>
+        </tr>
+        <tr>
+        <td>4907</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Auditing settings on object were changed.</td>
+        </tr>
+        <tr>
+        <td>4908</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Special Groups Logon table modified.</td>
+        </tr>
+        <tr>
+        <td>4912</td>
+        <td>807</td>
+        <td>Medium</td>
+        <td>Per User Audit Policy was changed.</td>
+        </tr>
+        <tr>
+        <td>4960</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>IPsec dropped an inbound packet that failed an integrity check. If this problem persists, it could indicate a network issue or that packets are being modified in transit to this computer. Verify that the packets sent from the remote computer are the same as those received by this computer. This error might also indicate interoperability problems with other IPsec implementations.</td>
+        </tr>
+        <tr>
+        <td>4961</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>IPsec dropped an inbound packet that failed a replay check. If this problem persists, it could indicate a replay attack against this computer.</td>
+        </tr>
+        <tr>
+        <td>4962</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>IPsec dropped an inbound packet that failed a replay check. The inbound packet had too low a sequence number to ensure it was not a replay.</td>
+        </tr>
+        <tr>
+        <td>4963</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>IPsec dropped an inbound clear text packet that should have been secured. This is usually due to the remote computer changing its IPsec policy without informing this computer. This could also be a spoofing attack attempt.</td>
+        </tr>
+        <tr>
+        <td>4965</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>IPsec received a packet from a remote computer with an incorrect Security Parameter Index (SPI). This is usually caused by malfunctioning hardware that is corrupting packets. If these errors persist, verify that the packets sent from the remote computer are the same as those received by this computer. This error may also indicate interoperability problems with other IPsec implementations. In that case, if connectivity is not impeded, then these events can be ignored.</td>
+        </tr>
+        <tr>
+        <td>4976</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>During Main Mode negotiation, IPsec received an invalid negotiation packet. If this problem persists, it could indicate a network issue or an attempt to modify or replay this negotiation.</td>
+        </tr>
+        <tr>
+        <td>4977</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>During Quick Mode negotiation, IPsec received an invalid negotiation packet. If this problem persists, it could indicate a network issue or an attempt to modify or replay this negotiation.</td>
+        </tr>
+        <tr>
+        <td>4978</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>During Extended Mode negotiation, IPsec received an invalid negotiation packet. If this problem persists, it could indicate a network issue or an attempt to modify or replay this negotiation.</td>
+        </tr>
+        <tr>
+        <td>4983</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>An IPsec Extended Mode negotiation failed. The corresponding Main Mode security association has been deleted.</td>
+        </tr>
+        <tr>
+        <td>4984</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>An IPsec Extended Mode negotiation failed. The corresponding Main Mode security association has been deleted.</td>
+        </tr>
+        <tr>
+        <td>5027</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>The Windows Firewall Service was unable to retrieve the security policy from the local storage. The service will continue enforcing the current policy.</td>
+        </tr>
+        <tr>
+        <td>5028</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>The Windows Firewall Service was unable to parse the new security policy. The service will continue with currently enforced policy.</td>
+        </tr>
+        <tr>
+        <td>5029</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>The Windows Firewall Service failed to initialize the driver. The service will continue to enforce the current policy.</td>
+        </tr>
+        <tr>
+        <td>5030</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>The Windows Firewall Service failed to start.</td>
+        </tr>
+        <tr>
+        <td>5035</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>The Windows Firewall Driver failed to start.</td>
+        </tr>
+        <tr>
+        <td>5037</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>The Windows Firewall Driver detected critical runtime error. Terminating.</td>
+        </tr>
+        <tr>
+        <td>5038</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Code integrity determined that the image hash of a file is not valid. The file could be corrupt due to unauthorized modification or the invalid hash could indicate a potential disk device error.</td>
+        </tr>
+        <tr>
+        <td>5120</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>OCSP Responder Service Started</td>
+        </tr>
+        <tr>
+        <td>5121</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>OCSP Responder Service Stopped</td>
+        </tr>
+        <tr>
+        <td>5122</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>A configuration entry changed in OCSP Responder Service</td>
+        </tr>
+        <tr>
+        <td>5123</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>A configuration entry changed in OCSP Responder Service</td>
+        </tr>
+        <tr>
+        <td>5376</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Credential Manager credentials were backed up.</td>
+        </tr>
+        <tr>
+        <td>5377</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Credential Manager credentials were restored from a backup.</td>
+        </tr>
+        <tr>
+        <td>5453</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>An IPsec negotiation with a remote computer failed because the IKE and AuthIP IPsec Keying Modules (IKEEXT) service is not started.</td>
+        </tr>
+        <tr>
+        <td>5480</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>IPsec Services failed to get the complete list of network interfaces on the computer. This poses a potential security risk because some of the network interfaces may not get the protection provided by the applied IPsec filters. Use the IP Security Monitor snap-in to diagnose the problem.</td>
+        </tr>
+        <tr>
+        <td>5483</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>IPsec Services failed to initialize RPC server. IPsec Services could not be started.</td>
+        </tr>
+        <tr>
+        <td>5484</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>IPsec Services has experienced a critical failure and has been shut down. The shutdown of IPsec Services can put the computer at greater risk of network attack or expose the computer to potential security risks.</td>
+        </tr>
+        <tr>
+        <td>5485</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>IPsec Services failed to process some IPsec filters on a plug-and-play event for network interfaces. This poses a potential security risk because some of the network interfaces may not get the protection provided by the applied IPsec filters. Use the IP Security Monitor snap-in to diagnose the problem.</td>
+        </tr>
+        <tr>
+        <td>6145</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>One or more errors occurred while processing security policy in the Group Policy objects.</td>
+        </tr>
+        <tr>
+        <td>6273</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Network Policy Server denied access to a user.</td>
+        </tr>
+        <tr>
+        <td>6274</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Network Policy Server discarded the request for a user.</td>
+        </tr>
+        <tr>
+        <td>6275</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Network Policy Server discarded the accounting request for a user.</td>
+        </tr>
+        <tr>
+        <td>6276</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Network Policy Server quarantined a user.</td>
+        </tr>
+        <tr>
+        <td>6277</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Network Policy Server granted access to a user but put it on probation because the host did not meet the defined health policy.</td>
+        </tr>
+        <tr>
+        <td>6278</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Network Policy Server granted full access to a user because the host met the defined health policy.</td>
+        </tr>
+        <tr>
+        <td>6279</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Network Policy Server locked the user account due to repeated failed authentication attempts.</td>
+        </tr>
+        <tr>
+        <td>6280</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Network Policy Server unlocked the user account.</td>
+        </tr>
+        <tr>
+        <td>-</td>
+        <td>640</td>
+        <td>Medium</td>
+        <td>General account database changed</td>
+        </tr>
+        <tr>
+        <td>-</td>
+        <td>619</td>
+        <td>Medium</td>
+        <td>Quality of Service Policy changed</td>
+        </tr>
+        <tr>
+        <td>24586</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>An error was encountered converting volume</td>
+        </tr>
+        <tr>
+        <td>24592</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>An attempt to automatically restart conversion on volume %2 failed.</td>
+        </tr>
+        <tr>
+        <td>24593</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Metadata write: Volume %2 returning errors while trying to modify metadata. If failures continue, decrypt volume</td>
+        </tr>
+        <tr>
+        <td>24594</td>
+        <td>N/A</td>
+        <td>Medium</td>
+        <td>Metadata rebuild: An attempt to write a copy of metadata on volume %2 failed and may appear as disk corruption. If failures continue, decrypt volume.</td>
+        </tr>
+        <tr>
+        <td>4608</td>
+        <td>512</td>
+        <td>Low</td>
+        <td>Windows is starting up.</td>
+        </tr>
+        <tr>
+        <td>4609</td>
+        <td>513</td>
+        <td>Low</td>
+        <td>Windows is shutting down.</td>
+        </tr>
+        <tr>
+        <td>4610</td>
+        <td>514</td>
+        <td>Low</td>
+        <td>An authentication package has been loaded by the Local Security Authority.</td>
+        </tr>
+        <tr>
+        <td>4611</td>
+        <td>515</td>
+        <td>Low</td>
+        <td>A trusted logon process has been registered with the Local Security Authority.</td>
+        </tr>
+        <tr>
+        <td>4612</td>
+        <td>516</td>
+        <td>Low</td>
+        <td>Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits.</td>
+        </tr>
+        <tr>
+        <td>4614</td>
+        <td>518</td>
+        <td>Low</td>
+        <td>A notification package has been loaded by the Security Account Manager.</td>
+        </tr>
+        <tr>
+        <td>4615</td>
+        <td>519</td>
+        <td>Low</td>
+        <td>Invalid use of LPC port.</td>
+        </tr>
+        <tr>
+        <td>4616</td>
+        <td>520</td>
+        <td>Low</td>
+        <td>The system time was changed.</td>
+        </tr>
+        <tr>
+        <td>4622</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A security package has been loaded by the Local Security Authority.</td>
+        </tr>
+        <tr>
+        <td>4624</td>
+        <td>528,540</td>
+        <td>Low</td>
+        <td>An account was successfully logged on.</td>
+        </tr>
+        <tr>
+        <td>4625</td>
+        <td>529-537,539</td>
+        <td>Low</td>
+        <td>An account failed to log on.</td>
+        </tr>
+        <tr>
+        <td>4634</td>
+        <td>538</td>
+        <td>Low</td>
+        <td>An account was logged off.</td>
+        </tr>
+        <tr>
+        <td>4646</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>IKE DoS-prevention mode started.</td>
+        </tr>
+        <tr>
+        <td>4647</td>
+        <td>551</td>
+        <td>Low</td>
+        <td>User initiated logoff.</td>
+        </tr>
+        <tr>
+        <td>4648</td>
+        <td>552</td>
+        <td>Low</td>
+        <td>A logon was attempted using explicit credentials.</td>
+        </tr>
+        <tr>
+        <td>4650</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An IPsec Main Mode security association was established. Extended Mode was not enabled. Certificate authentication was not used.</td>
+        </tr>
+        <tr>
+        <td>4651</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An IPsec Main Mode security association was established. Extended Mode was not enabled. A certificate was used for authentication.</td>
+        </tr>
+        <tr>
+        <td>4652</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An IPsec Main Mode negotiation failed.</td>
+        </tr>
+        <tr>
+        <td>4653</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An IPsec Main Mode negotiation failed.</td>
+        </tr>
+        <tr>
+        <td>4654</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An IPsec Quick Mode negotiation failed.</td>
+        </tr>
+        <tr>
+        <td>4655</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An IPsec Main Mode security association ended.</td>
+        </tr>
+        <tr>
+        <td>4656</td>
+        <td>560</td>
+        <td>Low</td>
+        <td>A handle to an object was requested.</td>
+        </tr>
+        <tr>
+        <td>4657</td>
+        <td>567</td>
+        <td>Low</td>
+        <td>A registry value was modified.</td>
+        </tr>
+        <tr>
+        <td>4658</td>
+        <td>562</td>
+        <td>Low</td>
+        <td>The handle to an object was closed.</td>
+        </tr>
+        <tr>
+        <td>4659</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A handle to an object was requested with intent to delete.</td>
+        </tr>
+        <tr>
+        <td>4660</td>
+        <td>564</td>
+        <td>Low</td>
+        <td>An object was deleted.</td>
+        </tr>
+        <tr>
+        <td>4661</td>
+        <td>565</td>
+        <td>Low</td>
+        <td>A handle to an object was requested.</td>
+        </tr>
+        <tr>
+        <td>4662</td>
+        <td>566</td>
+        <td>Low</td>
+        <td>An operation was performed on an object.</td>
+        </tr>
+        <tr>
+        <td>4663</td>
+        <td>567</td>
+        <td>Low</td>
+        <td>An attempt was made to access an object.</td>
+        </tr>
+        <tr>
+        <td>4664</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An attempt was made to create a hard link.</td>
+        </tr>
+        <tr>
+        <td>4665</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An attempt was made to create an application client context.</td>
+        </tr>
+        <tr>
+        <td>4666</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An application attempted an operation:</td>
+        </tr>
+        <tr>
+        <td>4667</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An application client context was deleted.</td>
+        </tr>
+        <tr>
+        <td>4668</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An application was initialized.</td>
+        </tr>
+        <tr>
+        <td>4670</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Permissions on an object were changed.</td>
+        </tr>
+        <tr>
+        <td>4671</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An application attempted to access a blocked ordinal through the TBS.</td>
+        </tr>
+        <tr>
+        <td>4672</td>
+        <td>576</td>
+        <td>Low</td>
+        <td>Special privileges assigned to new logon.</td>
+        </tr>
+        <tr>
+        <td>4673</td>
+        <td>577</td>
+        <td>Low</td>
+        <td>A privileged service was called.</td>
+        </tr>
+        <tr>
+        <td>4674</td>
+        <td>578</td>
+        <td>Low</td>
+        <td>An operation was attempted on a privileged object.</td>
+        </tr>
+        <tr>
+        <td>4688</td>
+        <td>592</td>
+        <td>Low</td>
+        <td>A new process has been created.</td>
+        </tr>
+        <tr>
+        <td>4689</td>
+        <td>593</td>
+        <td>Low</td>
+        <td>A process has exited.</td>
+        </tr>
+        <tr>
+        <td>4690</td>
+        <td>594</td>
+        <td>Low</td>
+        <td>An attempt was made to duplicate a handle to an object.</td>
+        </tr>
+        <tr>
+        <td>4691</td>
+        <td>595</td>
+        <td>Low</td>
+        <td>Indirect access to an object was requested.</td>
+        </tr>
+        <tr>
+        <td>4694</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Protection of auditable protected data was attempted.</td>
+        </tr>
+        <tr>
+        <td>4695</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Unprotection of auditable protected data was attempted.</td>
+        </tr>
+        <tr>
+        <td>4696</td>
+        <td>600</td>
+        <td>Low</td>
+        <td>A primary token was assigned to process.</td>
+        </tr>
+        <tr>
+        <td>4697</td>
+        <td>601</td>
+        <td>Low</td>
+        <td>Attempt to install a service</td>
+        </tr>
+        <tr>
+        <td>4698</td>
+        <td>602</td>
+        <td>Low</td>
+        <td>A scheduled task was created.</td>
+        </tr>
+        <tr>
+        <td>4699</td>
+        <td>602</td>
+        <td>Low</td>
+        <td>A scheduled task was deleted.</td>
+        </tr>
+        <tr>
+        <td>4700</td>
+        <td>602</td>
+        <td>Low</td>
+        <td>A scheduled task was enabled.</td>
+        </tr>
+        <tr>
+        <td>4701</td>
+        <td>602</td>
+        <td>Low</td>
+        <td>A scheduled task was disabled.</td>
+        </tr>
+        <tr>
+        <td>4702</td>
+        <td>602</td>
+        <td>Low</td>
+        <td>A scheduled task was updated.</td>
+        </tr>
+        <tr>
+        <td>4704</td>
+        <td>608</td>
+        <td>Low</td>
+        <td>A user right was assigned.</td>
+        </tr>
+        <tr>
+        <td>4705</td>
+        <td>609</td>
+        <td>Low</td>
+        <td>A user right was removed.</td>
+        </tr>
+        <tr>
+        <td>4707</td>
+        <td>611</td>
+        <td>Low</td>
+        <td>A trust to a domain was removed.</td>
+        </tr>
+        <tr>
+        <td>4709</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>IPsec Services was started.</td>
+        </tr>
+        <tr>
+        <td>4710</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>IPsec Services was disabled.</td>
+        </tr>
+        <tr>
+        <td>4711</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>May contain any one of the following: PAStore Engine applied locally cached copy of Active Directory storage IPsec policy on the computer. PAStore Engine applied Active Directory storage IPsec policy on the computer. PAStore Engine applied local registry storage IPsec policy on the computer. PAStore Engine failed to apply locally cached copy of Active Directory storage IPsec policy on the computer. PAStore Engine failed to apply Active Directory storage IPsec policy on the computer. PAStore Engine failed to apply local registry storage IPsec policy on the computer. PAStore Engine failed to apply some rules of the active IPsec policy on the computer. PAStore Engine failed to load directory storage IPsec policy on the computer. PAStore Engine loaded directory storage IPsec policy on the computer. PAStore Engine failed to load local storage IPsec policy on the computer. PAStore Engine loaded local storage IPsec policy on the computer.PAStore Engine polled for changes to the active IPsec policy and detected no changes.</td>
+        </tr>
+        <tr>
+        <td>4712</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>IPsec Services encountered a potentially serious failure.</td>
+        </tr>
+        <tr>
+        <td>4717</td>
+        <td>621</td>
+        <td>Low</td>
+        <td>System security access was granted to an account.</td>
+        </tr>
+        <tr>
+        <td>4718</td>
+        <td>622</td>
+        <td>Low</td>
+        <td>System security access was removed from an account.</td>
+        </tr>
+        <tr>
+        <td>4720</td>
+        <td>624</td>
+        <td>Low</td>
+        <td>A user account was created.</td>
+        </tr>
+        <tr>
+        <td>4722</td>
+        <td>626</td>
+        <td>Low</td>
+        <td>A user account was enabled.</td>
+        </tr>
+        <tr>
+        <td>4723</td>
+        <td>627</td>
+        <td>Low</td>
+        <td>An attempt was made to change an account's password.</td>
+        </tr>
+        <tr>
+        <td>4725</td>
+        <td>629</td>
+        <td>Low</td>
+        <td>A user account was disabled.</td>
+        </tr>
+        <tr>
+        <td>4726</td>
+        <td>630</td>
+        <td>Low</td>
+        <td>A user account was deleted.</td>
+        </tr>
+        <tr>
+        <td>4728</td>
+        <td>632</td>
+        <td>Low</td>
+        <td>A member was added to a security-enabled global group.</td>
+        </tr>
+        <tr>
+        <td>4729</td>
+        <td>633</td>
+        <td>Low</td>
+        <td>A member was removed from a security-enabled global group.</td>
+        </tr>
+        <tr>
+        <td>4730</td>
+        <td>634</td>
+        <td>Low</td>
+        <td>A security-enabled global group was deleted.</td>
+        </tr>
+        <tr>
+        <td>4731</td>
+        <td>635</td>
+        <td>Low</td>
+        <td>A security-enabled local group was created.</td>
+        </tr>
+        <tr>
+        <td>4732</td>
+        <td>636</td>
+        <td>Low</td>
+        <td>A member was added to a security-enabled local group.</td>
+        </tr>
+        <tr>
+        <td>4733</td>
+        <td>637</td>
+        <td>Low</td>
+        <td>A member was removed from a security-enabled local group.</td>
+        </tr>
+        <tr>
+        <td>4734</td>
+        <td>638</td>
+        <td>Low</td>
+        <td>A security-enabled local group was deleted.</td>
+        </tr>
+        <tr>
+        <td>4738</td>
+        <td>642</td>
+        <td>Low</td>
+        <td>A user account was changed.</td>
+        </tr>
+        <tr>
+        <td>4740</td>
+        <td>644</td>
+        <td>Low</td>
+        <td>A user account was locked out.</td>
+        </tr>
+        <tr>
+        <td>4741</td>
+        <td>645</td>
+        <td>Low</td>
+        <td>A computer account was changed.</td>
+        </tr>
+        <tr>
+        <td>4742</td>
+        <td>646</td>
+        <td>Low</td>
+        <td>A computer account was changed.</td>
+        </tr>
+        <tr>
+        <td>4743</td>
+        <td>647</td>
+        <td>Low</td>
+        <td>A computer account was deleted.</td>
+        </tr>
+        <tr>
+        <td>4744</td>
+        <td>648</td>
+        <td>Low</td>
+        <td>A security-disabled local group was created.</td>
+        </tr>
+        <tr>
+        <td>4745</td>
+        <td>649</td>
+        <td>Low</td>
+        <td>A security-disabled local group was changed.</td>
+        </tr>
+        <tr>
+        <td>4746</td>
+        <td>650</td>
+        <td>Low</td>
+        <td>A member was added to a security-disabled local group.</td>
+        </tr>
+        <tr>
+        <td>4747</td>
+        <td>651</td>
+        <td>Low</td>
+        <td>A member was removed from a security-disabled local group.</td>
+        </tr>
+        <tr>
+        <td>4748</td>
+        <td>652</td>
+        <td>Low</td>
+        <td>A security-disabled local group was deleted.</td>
+        </tr>
+        <tr>
+        <td>4749</td>
+        <td>653</td>
+        <td>Low</td>
+        <td>A security-disabled global group was created.</td>
+        </tr>
+        <tr>
+        <td>4750</td>
+        <td>654</td>
+        <td>Low</td>
+        <td>A security-disabled global group was changed.</td>
+        </tr>
+        <tr>
+        <td>4751</td>
+        <td>655</td>
+        <td>Low</td>
+        <td>A member was added to a security-disabled global group.</td>
+        </tr>
+        <tr>
+        <td>4752</td>
+        <td>656</td>
+        <td>Low</td>
+        <td>A member was removed from a security-disabled global group.</td>
+        </tr>
+        <tr>
+        <td>4753</td>
+        <td>657</td>
+        <td>Low</td>
+        <td>A security-disabled global group was deleted.</td>
+        </tr>
+        <tr>
+        <td>4756</td>
+        <td>660</td>
+        <td>Low</td>
+        <td>A member was added to a security-enabled universal group.</td>
+        </tr>
+        <tr>
+        <td>4757</td>
+        <td>661</td>
+        <td>Low</td>
+        <td>A member was removed from a security-enabled universal group.</td>
+        </tr>
+        <tr>
+        <td>4758</td>
+        <td>662</td>
+        <td>Low</td>
+        <td>A security-enabled universal group was deleted.</td>
+        </tr>
+        <tr>
+        <td>4759</td>
+        <td>663</td>
+        <td>Low</td>
+        <td>A security-disabled universal group was created.</td>
+        </tr>
+        <tr>
+        <td>4760</td>
+        <td>664</td>
+        <td>Low</td>
+        <td>A security-disabled universal group was changed.</td>
+        </tr>
+        <tr>
+        <td>4761</td>
+        <td>665</td>
+        <td>Low</td>
+        <td>A member was added to a security-disabled universal group.</td>
+        </tr>
+        <tr>
+        <td>4762</td>
+        <td>666</td>
+        <td>Low</td>
+        <td>A member was removed from a security-disabled universal group.</td>
+        </tr>
+        <tr>
+        <td>4767</td>
+        <td>671</td>
+        <td>Low</td>
+        <td>A user account was unlocked.</td>
+        </tr>
+        <tr>
+        <td>4768</td>
+        <td>672,676</td>
+        <td>Low</td>
+        <td>A Kerberos authentication ticket (TGT) was requested.</td>
+        </tr>
+        <tr>
+        <td>4769</td>
+        <td>673</td>
+        <td>Low</td>
+        <td>A Kerberos service ticket was requested.</td>
+        </tr>
+        <tr>
+        <td>4770</td>
+        <td>674</td>
+        <td>Low</td>
+        <td>A Kerberos service ticket was renewed.</td>
+        </tr>
+        <tr>
+        <td>4771</td>
+        <td>675</td>
+        <td>Low</td>
+        <td>Kerberos pre-authentication failed.</td>
+        </tr>
+        <tr>
+        <td>4772</td>
+        <td>672</td>
+        <td>Low</td>
+        <td>A Kerberos authentication ticket request failed.</td>
+        </tr>
+        <tr>
+        <td>4774</td>
+        <td>678</td>
+        <td>Low</td>
+        <td>An account was mapped for logon.</td>
+        </tr>
+        <tr>
+        <td>4775</td>
+        <td>679</td>
+        <td>Low</td>
+        <td>An account could not be mapped for logon.</td>
+        </tr>
+        <tr>
+        <td>4776</td>
+        <td>680,681</td>
+        <td>Low</td>
+        <td>The domain controller attempted to validate the credentials for an account.</td>
+        </tr>
+        <tr>
+        <td>4777</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The domain controller failed to validate the credentials for an account.</td>
+        </tr>
+        <tr>
+        <td>4778</td>
+        <td>682</td>
+        <td>Low</td>
+        <td>A session was reconnected to a Window Station.</td>
+        </tr>
+        <tr>
+        <td>4779</td>
+        <td>683</td>
+        <td>Low</td>
+        <td>A session was disconnected from a Window Station.</td>
+        </tr>
+        <tr>
+        <td>4781</td>
+        <td>685</td>
+        <td>Low</td>
+        <td>The name of an account was changed:</td>
+        </tr>
+        <tr>
+        <td>4782</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The password hash an account was accessed.</td>
+        </tr>
+        <tr>
+        <td>4783</td>
+        <td>667</td>
+        <td>Low</td>
+        <td>A basic application group was created.</td>
+        </tr>
+        <tr>
+        <td>4784</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A basic application group was changed.</td>
+        </tr>
+        <tr>
+        <td>4785</td>
+        <td>689</td>
+        <td>Low</td>
+        <td>A member was added to a basic application group.</td>
+        </tr>
+        <tr>
+        <td>4786</td>
+        <td>690</td>
+        <td>Low</td>
+        <td>A member was removed from a basic application group.</td>
+        </tr>
+        <tr>
+        <td>4787</td>
+        <td>691</td>
+        <td>Low</td>
+        <td>A nonmember was added to a basic application group.</td>
+        </tr>
+        <tr>
+        <td>4788</td>
+        <td>692</td>
+        <td>Low</td>
+        <td>A nonmember was removed from a basic application group.</td>
+        </tr>
+        <tr>
+        <td>4789</td>
+        <td>693</td>
+        <td>Low</td>
+        <td>A basic application group was deleted.</td>
+        </tr>
+        <tr>
+        <td>4790</td>
+        <td>694</td>
+        <td>Low</td>
+        <td>An LDAP query group was created.</td>
+        </tr>
+        <tr>
+        <td>4793</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Password Policy Checking API was called.</td>
+        </tr>
+        <tr>
+        <td>4800</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The workstation was locked.</td>
+        </tr>
+        <tr>
+        <td>4801</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The workstation was unlocked.</td>
+        </tr>
+        <tr>
+        <td>4802</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The screen saver was invoked.</td>
+        </tr>
+        <tr>
+        <td>4803</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The screen saver was dismissed.</td>
+        </tr>
+        <tr>
+        <td>4864</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A namespace collision was detected.</td>
+        </tr>
+        <tr>
+        <td>4869</td>
+        <td>773</td>
+        <td>Low</td>
+        <td>Certificate Services received a resubmitted certificate request.</td>
+        </tr>
+        <tr>
+        <td>4871</td>
+        <td>775</td>
+        <td>Low</td>
+        <td>Certificate Services received a request to publish the certificate revocation list (CRL).</td>
+        </tr>
+        <tr>
+        <td>4872</td>
+        <td>776</td>
+        <td>Low</td>
+        <td>Certificate Services published the certificate revocation list (CRL).</td>
+        </tr>
+        <tr>
+        <td>4873</td>
+        <td>777</td>
+        <td>Low</td>
+        <td>A certificate request extension changed.</td>
+        </tr>
+        <tr>
+        <td>4874</td>
+        <td>778</td>
+        <td>Low</td>
+        <td>One or more certificate request attributes changed.</td>
+        </tr>
+        <tr>
+        <td>4875</td>
+        <td>779</td>
+        <td>Low</td>
+        <td>Certificate Services received a request to shut down.</td>
+        </tr>
+        <tr>
+        <td>4876</td>
+        <td>780</td>
+        <td>Low</td>
+        <td>Certificate Services backup started.</td>
+        </tr>
+        <tr>
+        <td>4877</td>
+        <td>781</td>
+        <td>Low</td>
+        <td>Certificate Services backup completed.</td>
+        </tr>
+        <tr>
+        <td>4878</td>
+        <td>782</td>
+        <td>Low</td>
+        <td>Certificate Services restore started.</td>
+        </tr>
+        <tr>
+        <td>4879</td>
+        <td>783</td>
+        <td>Low</td>
+        <td>Certificate Services restore completed.</td>
+        </tr>
+        <tr>
+        <td>4880</td>
+        <td>784</td>
+        <td>Low</td>
+        <td>Certificate Services started.</td>
+        </tr>
+        <tr>
+        <td>4881</td>
+        <td>785</td>
+        <td>Low</td>
+        <td>Certificate Services stopped.</td>
+        </tr>
+        <tr>
+        <td>4883</td>
+        <td>787</td>
+        <td>Low</td>
+        <td>Certificate Services retrieved an archived key.</td>
+        </tr>
+        <tr>
+        <td>4884</td>
+        <td>788</td>
+        <td>Low</td>
+        <td>Certificate Services imported a certificate into its database.</td>
+        </tr>
+        <tr>
+        <td>4886</td>
+        <td>790</td>
+        <td>Low</td>
+        <td>Certificate Services received a certificate request.</td>
+        </tr>
+        <tr>
+        <td>4887</td>
+        <td>791</td>
+        <td>Low</td>
+        <td>Certificate Services approved a certificate request and issued a certificate.</td>
+        </tr>
+        <tr>
+        <td>4888</td>
+        <td>792</td>
+        <td>Low</td>
+        <td>Certificate Services denied a certificate request.</td>
+        </tr>
+        <tr>
+        <td>4889</td>
+        <td>793</td>
+        <td>Low</td>
+        <td>Certificate Services set the status of a certificate request to pending.</td>
+        </tr>
+        <tr>
+        <td>4891</td>
+        <td>795</td>
+        <td>Low</td>
+        <td>A configuration entry changed in Certificate Services.</td>
+        </tr>
+        <tr>
+        <td>4893</td>
+        <td>797</td>
+        <td>Low</td>
+        <td>Certificate Services archived a key.</td>
+        </tr>
+        <tr>
+        <td>4894</td>
+        <td>798</td>
+        <td>Low</td>
+        <td>Certificate Services imported and archived a key.</td>
+        </tr>
+        <tr>
+        <td>4895</td>
+        <td>799</td>
+        <td>Low</td>
+        <td>Certificate Services published the CA certificate to Active Directory Domain Services.</td>
+        </tr>
+        <tr>
+        <td>4898</td>
+        <td>802</td>
+        <td>Low</td>
+        <td>Certificate Services loaded a template.</td>
+        </tr>
+        <tr>
+        <td>4902</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Per-user audit policy table was created.</td>
+        </tr>
+        <tr>
+        <td>4904</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An attempt was made to register a security event source.</td>
+        </tr>
+        <tr>
+        <td>4905</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An attempt was made to unregister a security event source.</td>
+        </tr>
+        <tr>
+        <td>4909</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The local policy settings for the TBS were changed.</td>
+        </tr>
+        <tr>
+        <td>4910</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Group Policy settings for the TBS were changed.</td>
+        </tr>
+        <tr>
+        <td>4928</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An Active Directory replica source naming context was established.</td>
+        </tr>
+        <tr>
+        <td>4929</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An Active Directory replica source naming context was removed.</td>
+        </tr>
+        <tr>
+        <td>4930</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An Active Directory replica source naming context was modified.</td>
+        </tr>
+        <tr>
+        <td>4931</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An Active Directory replica destination naming context was modified.</td>
+        </tr>
+        <tr>
+        <td>4932</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Synchronization of a replica of an Active Directory naming context has begun.</td>
+        </tr>
+        <tr>
+        <td>4933</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Synchronization of a replica of an Active Directory naming context has ended.</td>
+        </tr>
+        <tr>
+        <td>4934</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Attributes of an Active Directory object were replicated.</td>
+        </tr>
+        <tr>
+        <td>4935</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Replication failure begins.</td>
+        </tr>
+        <tr>
+        <td>4936</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Replication failure ends.</td>
+        </tr>
+        <tr>
+        <td>4937</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A lingering object was removed from a replica.</td>
+        </tr>
+        <tr>
+        <td>4944</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The following policy was active when the Windows Firewall started.</td>
+        </tr>
+        <tr>
+        <td>4945</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A rule was listed when the Windows Firewall started.</td>
+        </tr>
+        <tr>
+        <td>4946</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to Windows Firewall exception list. A rule was added.</td>
+        </tr>
+        <tr>
+        <td>4947</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to Windows Firewall exception list. A rule was modified.</td>
+        </tr>
+        <tr>
+        <td>4948</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to Windows Firewall exception list. A rule was deleted.</td>
+        </tr>
+        <tr>
+        <td>4949</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Windows Firewall settings were restored to the default values.</td>
+        </tr>
+        <tr>
+        <td>4950</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A Windows Firewall setting has changed.</td>
+        </tr>
+        <tr>
+        <td>4951</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A rule has been ignored because its major version number was not recognized by Windows Firewall.</td>
+        </tr>
+        <tr>
+        <td>4952</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Parts of a rule have been ignored because its minor version number was not recognized by Windows Firewall. The other parts of the rule will be enforced.</td>
+        </tr>
+        <tr>
+        <td>4953</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A rule has been ignored by Windows Firewall because it could not parse the rule.</td>
+        </tr>
+        <tr>
+        <td>4954</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Windows Firewall Group Policy settings have changed. The new settings have been applied.</td>
+        </tr>
+        <tr>
+        <td>4956</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Windows Firewall has changed the active profile.</td>
+        </tr>
+        <tr>
+        <td>4957</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Windows Firewall did not apply the following rule:</td>
+        </tr>
+        <tr>
+        <td>4958</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer:</td>
+        </tr>
+        <tr>
+        <td>4979</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>IPsec Main Mode and Extended Mode security associations were established.</td>
+        </tr>
+        <tr>
+        <td>4980</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>IPsec Main Mode and Extended Mode security associations were established.</td>
+        </tr>
+        <tr>
+        <td>4981</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>IPsec Main Mode and Extended Mode security associations were established.</td>
+        </tr>
+        <tr>
+        <td>4982</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>IPsec Main Mode and Extended Mode security associations were established.</td>
+        </tr>
+        <tr>
+        <td>4985</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The state of a transaction has changed.</td>
+        </tr>
+        <tr>
+        <td>5024</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Firewall Service has started successfully.</td>
+        </tr>
+        <tr>
+        <td>5025</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Firewall Service has been stopped.</td>
+        </tr>
+        <tr>
+        <td>5031</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Firewall Service blocked an application from accepting incoming connections on the network.</td>
+        </tr>
+        <tr>
+        <td>5032</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Windows Firewall was unable to notify the user that it blocked an application from accepting incoming connections on the network.</td>
+        </tr>
+        <tr>
+        <td>5033</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Firewall Driver has started successfully.</td>
+        </tr>
+        <tr>
+        <td>5034</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Firewall Driver has been stopped.</td>
+        </tr>
+        <tr>
+        <td>5039</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A registry key was virtualized.</td>
+        </tr>
+        <tr>
+        <td>5040</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to IPsec settings. An Authentication Set was added.</td>
+        </tr>
+        <tr>
+        <td>5041</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to IPsec settings. An Authentication Set was modified.</td>
+        </tr>
+        <tr>
+        <td>5042</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to IPsec settings. An Authentication Set was deleted.</td>
+        </tr>
+        <tr>
+        <td>5043</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to IPsec settings. A Connection Security Rule was added.</td>
+        </tr>
+        <tr>
+        <td>5044</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to IPsec settings. A Connection Security Rule was modified.</td>
+        </tr>
+        <tr>
+        <td>5045</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to IPsec settings. A Connection Security Rule was deleted.</td>
+        </tr>
+        <tr>
+        <td>5046</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to IPsec settings. A Crypto Set was added.</td>
+        </tr>
+        <tr>
+        <td>5047</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to IPsec settings. A Crypto Set was modified.</td>
+        </tr>
+        <tr>
+        <td>5048</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A change has been made to IPsec settings. A Crypto Set was deleted.</td>
+        </tr>
+        <tr>
+        <td>5050</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An attempt to programmatically disable the Windows Firewall using a call to InetFwProfile.FirewallEnabled(False)</td>
+        </tr>
+        <tr>
+        <td>5051</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A file was virtualized.</td>
+        </tr>
+        <tr>
+        <td>5056</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A cryptographic self test was performed.</td>
+        </tr>
+        <tr>
+        <td>5057</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A cryptographic primitive operation failed.</td>
+        </tr>
+        <tr>
+        <td>5058</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Key file operation.</td>
+        </tr>
+        <tr>
+        <td>5059</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Key migration operation.</td>
+        </tr>
+        <tr>
+        <td>5060</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Verification operation failed.</td>
+        </tr>
+        <tr>
+        <td>5061</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Cryptographic operation.</td>
+        </tr>
+        <tr>
+        <td>5062</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A kernel-mode cryptographic self test was performed.</td>
+        </tr>
+        <tr>
+        <td>5063</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A cryptographic provider operation was attempted.</td>
+        </tr>
+        <tr>
+        <td>5064</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A cryptographic context operation was attempted.</td>
+        </tr>
+        <tr>
+        <td>5065</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A cryptographic context modification was attempted.</td>
+        </tr>
+        <tr>
+        <td>5066</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A cryptographic function operation was attempted.</td>
+        </tr>
+        <tr>
+        <td>5067</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A cryptographic function modification was attempted.</td>
+        </tr>
+        <tr>
+        <td>5068</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A cryptographic function provider operation was attempted.</td>
+        </tr>
+        <tr>
+        <td>5069</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A cryptographic function property operation was attempted.</td>
+        </tr>
+        <tr>
+        <td>5070</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A cryptographic function property modification was attempted.</td>
+        </tr>
+        <tr>
+        <td>5125</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A request was submitted to the OCSP Responder Service</td>
+        </tr>
+        <tr>
+        <td>5126</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Signing Certificate was automatically updated by the OCSP Responder Service</td>
+        </tr>
+        <tr>
+        <td>5127</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The OCSP Revocation Provider successfully updated the revocation information</td>
+        </tr>
+        <tr>
+        <td>5136</td>
+        <td>566</td>
+        <td>Low</td>
+        <td>A directory service object was modified.</td>
+        </tr>
+        <tr>
+        <td>5137</td>
+        <td>566</td>
+        <td>Low</td>
+        <td>A directory service object was created.</td>
+        </tr>
+        <tr>
+        <td>5138</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A directory service object was undeleted.</td>
+        </tr>
+        <tr>
+        <td>5139</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A directory service object was moved.</td>
+        </tr>
+        <tr>
+        <td>5140</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A network share object was accessed.</td>
+        </tr>
+        <tr>
+        <td>5141</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A directory service object was deleted.</td>
+        </tr>
+        <tr>
+        <td>5152</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Filtering Platform blocked a packet.</td>
+        </tr>
+        <tr>
+        <td>5153</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A more restrictive Windows Filtering Platform filter has blocked a packet.</td>
+        </tr>
+        <tr>
+        <td>5154</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections.</td>
+        </tr>
+        <tr>
+        <td>5155</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections.</td>
+        </tr>
+        <tr>
+        <td>5156</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Filtering Platform has allowed a connection.</td>
+        </tr>
+        <tr>
+        <td>5157</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Filtering Platform has blocked a connection.</td>
+        </tr>
+        <tr>
+        <td>5158</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Filtering Platform has permitted a bind to a local port.</td>
+        </tr>
+        <tr>
+        <td>5159</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The Windows Filtering Platform has blocked a bind to a local port.</td>
+        </tr>
+        <tr>
+        <td>5378</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The requested credentials delegation was disallowed by policy.</td>
+        </tr>
+        <tr>
+        <td>5440</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The following callout was present when the Windows Filtering Platform Base Filtering Engine started.</td>
+        </tr>
+        <tr>
+        <td>5441</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The following filter was present when the Windows Filtering Platform Base Filtering Engine started.</td>
+        </tr>
+        <tr>
+        <td>5442</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The following provider was present when the Windows Filtering Platform Base Filtering Engine started.</td>
+        </tr>
+        <tr>
+        <td>5443</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The following provider context was present when the Windows Filtering Platform Base Filtering Engine started.</td>
+        </tr>
+        <tr>
+        <td>5444</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The following sublayer was present when the Windows Filtering Platform Base Filtering Engine started.</td>
+        </tr>
+        <tr>
+        <td>5446</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A Windows Filtering Platform callout has been changed.</td>
+        </tr>
+        <tr>
+        <td>5447</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A Windows Filtering Platform filter has been changed.</td>
+        </tr>
+        <tr>
+        <td>5448</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A Windows Filtering Platform provider has been changed.</td>
+        </tr>
+        <tr>
+        <td>5449</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A Windows Filtering Platform provider context has been changed.</td>
+        </tr>
+        <tr>
+        <td>5450</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A Windows Filtering Platform sublayer has been changed.</td>
+        </tr>
+        <tr>
+        <td>5451</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An IPsec Quick Mode security association was established.</td>
+        </tr>
+        <tr>
+        <td>5452</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An IPsec Quick Mode security association ended.</td>
+        </tr>
+        <tr>
+        <td>5456</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine applied Active Directory storage IPsec policy on the computer.</td>
+        </tr>
+        <tr>
+        <td>5457</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine failed to apply Active Directory storage IPsec policy on the computer.</td>
+        </tr>
+        <tr>
+        <td>5458</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine applied locally cached copy of Active Directory storage IPsec policy on the computer.</td>
+        </tr>
+        <tr>
+        <td>5459</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine failed to apply locally cached copy of Active Directory storage IPsec policy on the computer.</td>
+        </tr>
+        <tr>
+        <td>5460</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine applied local registry storage IPsec policy on the computer.</td>
+        </tr>
+        <tr>
+        <td>5461</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine failed to apply local registry storage IPsec policy on the computer.</td>
+        </tr>
+        <tr>
+        <td>5462</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine failed to apply some rules of the active IPsec policy on the computer. Use the IP Security Monitor snap-in to diagnose the problem.</td>
+        </tr>
+        <tr>
+        <td>5463</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine polled for changes to the active IPsec policy and detected no changes.</td>
+        </tr>
+        <tr>
+        <td>5464</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine polled for changes to the active IPsec policy, detected changes, and applied them to IPsec Services.</td>
+        </tr>
+        <tr>
+        <td>5465</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine received a control for forced reloading of IPsec policy and processed the control successfully.</td>
+        </tr>
+        <tr>
+        <td>5466</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine polled for changes to the Active Directory IPsec policy, determined that Active Directory cannot be reached, and will use the cached copy of the Active Directory IPsec policy instead. Any changes made to the Active Directory IPsec policy since the last poll could not be applied.</td>
+        </tr>
+        <tr>
+        <td>5467</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine polled for changes to the Active Directory IPsec policy, determined that Active Directory can be reached, and found no changes to the policy. The cached copy of the Active Directory IPsec policy is no longer being used.</td>
+        </tr>
+        <tr>
+        <td>5468</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine polled for changes to the Active Directory IPsec policy, determined that Active Directory can be reached, found changes to the policy, and applied those changes. The cached copy of the Active Directory IPsec policy is no longer being used.</td>
+        </tr>
+        <tr>
+        <td>5471</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine loaded local storage IPsec policy on the computer.</td>
+        </tr>
+        <tr>
+        <td>5472</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine failed to load local storage IPsec policy on the computer.</td>
+        </tr>
+        <tr>
+        <td>5473</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine loaded directory storage IPsec policy on the computer.</td>
+        </tr>
+        <tr>
+        <td>5474</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine failed to load directory storage IPsec policy on the computer.</td>
+        </tr>
+        <tr>
+        <td>5477</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>PAStore Engine failed to add quick mode filter.</td>
+        </tr>
+        <tr>
+        <td>5479</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>IPsec Services has been shut down successfully. The shutdown of IPsec Services can put the computer at greater risk of network attack or expose the computer to potential security risks.</td>
+        </tr>
+        <tr>
+        <td>5632</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A request was made to authenticate to a wireless network.</td>
+        </tr>
+        <tr>
+        <td>5633</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A request was made to authenticate to a wired network.</td>
+        </tr>
+        <tr>
+        <td>5712</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>A Remote Procedure Call (RPC) was attempted.</td>
+        </tr>
+        <tr>
+        <td>5888</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An object in the COM+ Catalog was modified.</td>
+        </tr>
+        <tr>
+        <td>5889</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An object was deleted from the COM+ Catalog.</td>
+        </tr>
+        <tr>
+        <td>5890</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An object was added to the COM+ Catalog.</td>
+        </tr>
+        <tr>
+        <td>6008</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The previous system shutdown was unexpected</td>
+        </tr>
+        <tr>
+        <td>6144</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Security policy in the Group Policy objects has been applied successfully.</td>
+        </tr>
+        <tr>
+        <td>6272</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Network Policy Server granted access to a user.</td>
+        </tr>
+        <tr>
+        <td>N/A</td>
+        <td>561</td>
+        <td>Low</td>
+        <td>A handle to an object was requested.</td>
+        </tr>
+        <tr>
+        <td>N/A</td>
+        <td>563</td>
+        <td>Low</td>
+        <td>Object open for delete</td>
+        </tr>
+        <tr>
+        <td>N/A</td>
+        <td>625</td>
+        <td>Low</td>
+        <td>User Account Type Changed</td>
+        </tr>
+        <tr>
+        <td>N/A</td>
+        <td>613</td>
+        <td>Low</td>
+        <td>IPsec policy agent started</td>
+        </tr>
+        <tr>
+        <td>N/A</td>
+        <td>614</td>
+        <td>Low</td>
+        <td>IPsec policy agent disabled</td>
+        </tr>
+        <tr>
+        <td>N/A</td>
+        <td>615</td>
+        <td>Low</td>
+        <td>IPsec policy agent</td>
+        </tr>
+        <tr>
+        <td>N/A</td>
+        <td>616</td>
+        <td>Low</td>
+        <td>IPsec policy agent encountered a potential serious failure</td>
+        </tr>
+        <tr>
+        <td>24577</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Encryption of volume started</td>
+        </tr>
+        <tr>
+        <td>24578</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Encryption of volume stopped</td>
+        </tr>
+        <tr>
+        <td>24579</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Encryption of volume completed</td>
+        </tr>
+        <tr>
+        <td>24580</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Decryption of volume started</td>
+        </tr>
+        <tr>
+        <td>24581</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Decryption of volume stopped</td>
+        </tr>
+        <tr>
+        <td>24582</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Decryption of volume completed</td>
+        </tr>
+        <tr>
+        <td>24583</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Conversion worker thread for volume started</td>
+        </tr>
+        <tr>
+        <td>24584</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Conversion worker thread for volume temporarily stopped</td>
+        </tr>
+        <tr>
+        <td>24588</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>The conversion operation on volume %2 encountered a bad sector error. Please validate the data on this volume</td>
+        </tr>
+        <tr>
+        <td>24595</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Volume %2 contains bad clusters. These clusters will be skipped during conversion.</td>
+        </tr>
+        <tr>
+        <td>24621</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>Initial state check: Rolling volume conversion transaction on %2.</td>
+        </tr>
+        <tr>
+        <td>5049</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>An IPsec Security Association was deleted.</td>
+        </tr>
+        <tr>
+        <td>5478</td>
+        <td>N/A</td>
+        <td>Low</td>
+        <td>IPsec Services has started successfully.</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, table, cells, a, i, txtValue;
+          input = document.getElementById('myInput');
+          filter = input.value.toUpperCase();
+          table = document.getElementById("tableIdContents");
+          cells = table.getElementsByTagName('tr');
+          console.log(cells);
+          
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < cells.length; i++) {
+            txtValue = cells[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                cells [i].style.display = "";
+            } else {
+                cells [i].style.display = "none";
+            }
+            cells[0].style.display = "";
+          }
+
+        }
+    </script>
+</body>
+</html>
