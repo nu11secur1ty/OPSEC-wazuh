@@ -25,3 +25,7 @@ bash pass_changer-4.1.1.sh
 ```bash
 bash deploypanel.sh
 ```
+- Cleaning of the unnecessary keys
+```bash
+bash cleankey.sh
+```
