@@ -20,7 +20,7 @@ cd wazuh/
 ```
 - Password changing for `admin`
 ```bash
-bash pass_changer-4.1.1.sh
+bash pass_changer-4.1.1.sh -u admin -p your_password
 ```
 -  Deploying the OPSEC Panel
 ```bash
