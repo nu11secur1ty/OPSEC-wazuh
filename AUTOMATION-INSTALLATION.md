@@ -9,4 +9,12 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh/master/needtoinstal
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh/master/sakai-4.1.1.sh | bash
 ```
-
+- - - Get the source and configure from inside
+```bash
+git clone https://github.com/nu11secur1ty/wazuh.git
+```
+- Password changing for `admin`
+```bash
+cd wazuh/
+bash 
+```
