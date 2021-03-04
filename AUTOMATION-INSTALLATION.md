@@ -11,6 +11,7 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh/master/sakai-4.1.1.
 ```
 - - - Get the source and configure from inside
 ```bash
+cd /opt/
 git clone https://github.com/nu11secur1ty/wazuh.git
 ```
 - Navigate to the parent directory
