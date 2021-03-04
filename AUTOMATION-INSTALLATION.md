@@ -1,4 +1,4 @@
-# Installing the OPSEC-Wazuh SIEM
+# Installing the OPSEC-Wazuh SIEM 4.1.1
 
 ![](https://github.com/nu11secur1ty/wazuh/blob/master/OPSEC/logo.png)
 
