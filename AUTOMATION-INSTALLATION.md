@@ -16,5 +16,8 @@ git clone https://github.com/nu11secur1ty/wazuh.git
 - Password changing for `admin`
 ```bash
 cd wazuh/
-bash 
+bash pass_changer-4.1.1.sh
+```
+-  Deploying the OPSEC Panel
+```bash
 ```
