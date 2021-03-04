@@ -32,6 +32,6 @@ bash cleankey.sh
 ```
 - Update OS
 ```curl
-curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh/master/updateOS.py | python
+curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh/master/updateOS.py | python3
 ```
 ## BR
