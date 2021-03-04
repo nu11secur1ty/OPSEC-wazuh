@@ -4,5 +4,6 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh/master/needtoinstal
 ```
 - - - Installing the OPSEC-Wazuh SIEM
 ```bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh/master/sakai-4.1.1.sh | bash
 ```
 
