@@ -1,4 +1,4 @@
-# Before installing the SIEM
+# Installing the OPSEC-Wazuh SIEM
 
 ![](https://github.com/nu11secur1ty/wazuh/blob/master/OPSEC/logo.png)
 
