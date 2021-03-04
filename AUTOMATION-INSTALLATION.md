@@ -1,4 +1,4 @@
-# Installing the OPSEC-Wazuh SIEM 4.1.1 for Ubuntu Server 20.04
+# Installing the OPSEC-Wazuh SIEM 4.1.1 on Ubuntu Server 20.04
 
 ![](https://github.com/nu11secur1ty/wazuh/blob/master/OPSEC/logo.png)
 
