@@ -13,11 +13,15 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh/master/sakai-4.1.1.
 ```bash
 git clone https://github.com/nu11secur1ty/wazuh.git
 ```
-- Password changing for `admin`
+- Navigate to the parent directory
 ```bash
 cd wazuh/
+```
+- Password changing for `admin`
+```bash
 bash pass_changer-4.1.1.sh
 ```
 -  Deploying the OPSEC Panel
 ```bash
+bash deploypanel.sh
 ```
