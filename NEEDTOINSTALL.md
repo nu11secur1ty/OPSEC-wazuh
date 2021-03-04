@@ -1,4 +1,5 @@
-# Before install the SIEM
+# Before installing the SIEM
+
 ![](https://github.com/nu11secur1ty/wazuh/blob/master/OPSEC/logo.png)
 
 ```bash
