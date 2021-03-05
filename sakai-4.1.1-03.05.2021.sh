@@ -388,9 +388,10 @@ checkInstallation() {
         sleep 10
     done
     echo $'\nInstallation finished'
-    echo $'\nYou can access the web interface https://<kibana_ip>. The credentials are admin:admin'
+    
+    IP=$(hostname -I | cut -d' ' -f1)
+    echo $'\nYou can access the web interface https://$IP/>. The credentials are admin:admin'
     exit 0;
-
 }
 
 main() {
