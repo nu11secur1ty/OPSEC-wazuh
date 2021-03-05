@@ -390,7 +390,8 @@ checkInstallation() {
     echo $'\nInstallation finished'
     
     IP=$(hostname -I | cut -d' ' -f1)
-    echo $'\nYou can access the web interface https://$IP/>. The credentials are admin:admin'
+    echo "You can access the web interface https://$IP/>. The credentials are admin:admin"
+    # echo $'\nYou can access the web interface https://$IP/>. The credentials are admin:admin'
     exit 0;
 }
 
