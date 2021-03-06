@@ -12,9 +12,9 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh/master/needtoinstal
 - - - Installing the OPSEC-Wazuh SIEM
 ```bash
 # 4.0.4 
-curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh-OPSEC/master/sakai-4.0.4.sh | bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/OPSEC-wazuh/master/sakai-4.0.4.sh | bash
 # 4.1.1 - Stable
-curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh-OPSEC/master/sakai-4.1.1-03.06.2021.sh | bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/OPSEC-wazuh/master/sakai-4.1.1-03.06.2021.sh | bash
 ```
 - - - Get the source and configure from inside
 ```bash
