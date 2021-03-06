@@ -12,12 +12,10 @@ apt-get purge wazuh-manager -y
 apt-get purge filebeat -y
   rm -rf /etc/*filebeat*
 
-apt-get purge opendistroforelasticsearch -y
-apt purge elasticsearch -y
+apt-get purge --auto-remove opendistroforelasticsearch -y
   rm -rf /etc/*elastic*
   rm -rf /usr/share/elasticsearch/
 
-apt-get purge --auto-remove opendistroforelasticsearch -y
 apt-get purge --auto-remove elasticsearch-oss opendistroforelasticsearch -y
 rm -rf /usr/share/*elasticsearch*
 rm -rf /etc/default/*elasticsearch*
