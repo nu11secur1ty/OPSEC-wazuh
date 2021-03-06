@@ -16,6 +16,7 @@ print "Starting Please wait...\n";
     sleep 3;
 # Start Services
 my $elastic_sta = `systemctl start elasticsearch.service`;
+    sleep 11;
 my $kibana_sta = `systemctl start kibana.service`;
 my $filebeat_sta = `systemctl start filebeat.service`;
 my $wazuh_sta = `systemctl start wazuh-manager.service`;
@@ -23,7 +24,7 @@ my $wazuh_sta = `systemctl start wazuh-manager.service`;
 print "Restarting Please wait...\n";
     sleep 11;
 # Restart Services
-my $elastic_re = `systemctl restart elasticsearch.service`;
+# my $elastic_re = `systemctl restart elasticsearch.service`;
 my $kibana_re = `systemctl restart kibana.service`;
 my $filebeat_re = `systemctl restart filebeat.service`;
 my $wazuh_re = `systemctl restart wazuh-manager.service`;
