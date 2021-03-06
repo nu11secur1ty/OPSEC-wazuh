@@ -7,27 +7,25 @@ kill -9 $(pgrep -f kibana)
 
 # Removing
 apt-get purge wazuh-manager -y
-  rm -rf /etc/*wazuh*
+rm -rf /etc/*wazuh*
+rm -rf /etc/apt/sources.list.d/*wazuh*
   
 apt-get purge filebeat -y
-  rm -rf /etc/*filebeat*
+rm -rf /etc/*filebeat*
 
 apt-get purge --auto-remove opendistroforelasticsearch -y
-  rm -rf /etc/*elastic*
-  rm -rf /usr/share/elasticsearch/
+rm -rf /etc/*elastic*
+rm -rf /usr/share/elasticsearch/
 
 apt-get purge --auto-remove elasticsearch-oss opendistroforelasticsearch -y
 rm -rf /usr/share/*elasticsearch*
 rm -rf /etc/default/*elasticsearch*
 rm -rf /etc/init.d/*elasticsearch*
+rm -rf /var/lib/*elasticsearch*
+rm -rf /etc/*elasticsearch*
 
-rm -rf /usr/share/*elasticsearch*
 apt-get purge opendistroforelasticsearch-kibana -y
 rm -rf /etc/*kibana*
-rm -rf /etc/*wazuh*
-rm -rf /var/lib/elasticsearch
-rm -rf /etc/elasticsearch
-rm -rf /etc/apt/sources.list.d/*wazuh*
 
 # cleaning
 apt-get update -y
