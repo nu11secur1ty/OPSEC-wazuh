@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 # @nu11secur1ty
-
-kill $(pgrep -f elasticsearch)
-kill $(pgrep -f filebeat)
-kill $(pgrep -f wazuh)
-kill $(pgrep -f kibana)
+kill -9 $(pgrep -f elasticsearch)
+kill -9 $(pgrep -f filebeat)
+kill -9 $(pgrep -f wazuh)
+kill -9 $(pgrep -f kibana)
+# Removing
 apt-get purge wazuh-manager -y
   rm -rf /etc/*wazuh*
 apt-get purge filebeat -y
