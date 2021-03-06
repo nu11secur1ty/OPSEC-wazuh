@@ -7,6 +7,9 @@
 # and/or modify it under the terms of the GNU General Public
 # License (version 2) as published by the FSF - Free Software
 # Foundation.
+# Ip info
+# IP=$(hostname -I | cut -d' ' -f1)
+# echo "You can access the web interface https://$IP/>. The credentials are admin:admin"
 
 ## Check if system is based on yum or apt-get
 char="."
