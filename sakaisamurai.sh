@@ -15,9 +15,9 @@ apt purge elasticsearch -y
   rm -rf /usr/share/elasticsearch/
 apt-get purge --auto-remove opendistroforelasticsearch -y
 apt-get purge --auto-remove elasticsearch-oss opendistroforelasticsearch -y
-rm -rf /usr/share/elasticsearch/bin/elasticsearch
-rm -rf /etc/default/elasticsearch
-rm -rf /etc/init.d/elasticsearch
+rm -rf /usr/share/*elasticsearch*
+rm -rf /etc/default/*elasticsearch*
+rm -rf /etc/init.d/*elasticsearch*
 
 rm -rf /usr/share/*elasticsearch*
 apt-get purge opendistroforelasticsearch-kibana -y
