@@ -9,6 +9,7 @@ apt-get purge opendistroforelasticsearch -y
   rm -rf /usr/share/elasticsearch/
 apt-get purge --auto-remove opendistroforelasticsearch -y
 apt-get purge opendistroforelasticsearch-kibana -y
+  rm -rf /etc/*kibana*
 rm -rf /etc/*wazuh*
 rm -rf /var/lib/elasticsearch
 rm -rf /etc/elasticsearch
