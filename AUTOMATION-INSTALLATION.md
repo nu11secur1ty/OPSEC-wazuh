@@ -23,7 +23,7 @@ git clone https://github.com/nu11secur1ty/wazuh-OPSEC.git
 ```
 - Navigate to the parent directory
 ```bash
-cd wazuh/
+cd wazuh-OPSEC/
 ```
 - Password changing for `admin`
 ```bash
