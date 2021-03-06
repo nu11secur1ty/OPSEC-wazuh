@@ -1,5 +1,10 @@
 #!/usr/bin/bash
 # @nu11secur1ty
+
+kill $(pgrep -f elasticsearch)
+kill $(pgrep -f filebeat)
+kill $(pgrep -f wazuh)
+kill $(pgrep -f kibana)
 apt-get purge wazuh-manager -y
   rm -rf /etc/*wazuh*
 apt-get purge filebeat -y
@@ -10,6 +15,10 @@ apt purge elasticsearch -y
   rm -rf /usr/share/elasticsearch/
 apt-get purge --auto-remove opendistroforelasticsearch -y
 apt-get purge --auto-remove elasticsearch-oss opendistroforelasticsearch -y
+rm -rf /usr/share/elasticsearch/bin/elasticsearch
+rm -rf /etc/default/elasticsearch
+rm -rf /etc/init.d/elasticsearch
+
 rm -rf /usr/share/*elasticsearch*
 apt-get purge opendistroforelasticsearch-kibana -y
   rm -rf /etc/*kibana*
