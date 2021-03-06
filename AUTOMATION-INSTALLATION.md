@@ -19,11 +19,11 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh-OPSEC/master/sakai-
 - - - Get the source and configure from inside
 ```bash
 cd /opt/
-git clone https://github.com/nu11secur1ty/wazuh-OPSEC.git
+git clone https://github.com/nu11secur1ty/OPSEC-wazuh.git
 ```
 - Navigate to the parent directory
 ```bash
-cd wazuh-OPSEC/
+cd OPSEC-wazuh/
 ```
 - Password changing for `admin`
 ```bash
