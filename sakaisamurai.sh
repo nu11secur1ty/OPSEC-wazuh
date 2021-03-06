@@ -1,8 +1,11 @@
 #!/usr/bin/bash
 # @nu11secur1ty
 apt-get purge wazuh-manager -y
+  rm -rf /etc/*wazuh*
 apt-get purge filebeat -y
+  rm -rf /etc/*filebeat*
 apt-get purge opendistroforelasticsearch -y
+  rm -rf /etc/*elastic*
   rm -rf /usr/share/elasticsearch/
 apt-get purge --auto-remove opendistroforelasticsearch -y
 apt-get purge opendistroforelasticsearch-kibana -y
