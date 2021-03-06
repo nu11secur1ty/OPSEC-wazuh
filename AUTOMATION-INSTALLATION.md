@@ -1,6 +1,7 @@
 # Installing the OPSEC-Wazuh SIEM 4.1.1 on Ubuntu Server 20.04
 
 [check_script_update_4.1.1](https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/unattended-installation/all-in-one-installation.sh)
+
 [check_script_update_4.0.4](https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.0/resources/open-distro/unattended-installation/all-in-one-installation.sh)
 
 ![](https://github.com/nu11secur1ty/wazuh/blob/master/OPSEC/logo.png)
