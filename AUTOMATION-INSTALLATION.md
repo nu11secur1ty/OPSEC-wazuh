@@ -7,7 +7,7 @@
 ![](https://github.com/nu11secur1ty/wazuh/blob/master/OPSEC/logo.png)
 
 ```bash
-curl -s https://raw.githubusercontent.com/nu11secur1ty/wazuh/master/needtoinstall.sh | bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/OPSEC-wazuh/master/needtoinstall.sh | bash
 ```
 - - - Installing the OPSEC-Wazuh SIEM
 ```bash
