@@ -28,6 +28,7 @@ cd wazuh-OPSEC/
 - Password changing for `admin`
 ```bash
 bash pass_changer-4.1.1.sh -u admin -p your_password
+perl Framework-Services/reloader_a_pass_change.pl
 ```
 -  Deploying the OPSEC Panel
 ```bash
