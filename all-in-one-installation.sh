@@ -7,6 +7,7 @@
 # and/or modify it under the terms of the GNU General Public
 # License (version 2) as published by the FSF - Free Software
 # Foundation.
+# https://documentation.wazuh.com/current/installation-guide/more-installation-alternatives/elastic-stack/all-in-one-deployment/unattended-installation.html
 
 ## Check if system is based on yum or apt-get or zypper
 char="."
