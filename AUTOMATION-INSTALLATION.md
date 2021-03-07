@@ -23,29 +23,30 @@ curl -so ~/all-in-one-installation.sh https://raw.githubusercontent.com/nu11secu
 cd /opt/
 git clone https://github.com/nu11secur1ty/OPSEC-wazuh.git
 ```
-- Navigate to the parent directory
+- - - Navigate to the parent directory
 ```bash
 cd OPSEC-wazuh/
 ```
-- Password changing for `admin`
+- - - Password changing for `admin`
 ```bash
 bash pass_changer-4.1.1.sh -u admin -p your_password
 perl Framework-Services/reloader_a_pass_change.pl
 ```
--  Deploying the OPSEC Panel
+- - - Deploying the OPSEC Panel
 ```bash
 bash deploypanel.sh
 ```
-- Cleaning of the unnecessary keys
+- - - Cleaning of the unnecessary keys
 ```bash
 bash cleankey.sh
-```
-- Update OS
-```curl
-curl -s https://raw.githubusercontent.com/nu11secur1ty/OPSEC-wazuh/master/updateOS.py | python3
 ```
 - - - Preparing Kibana for administration
 ```bash
 sed -i 's/false/true/g' /usr/share/kibana/data/wazuh/config/wazuh.yml
 ```
+- - - Update OS
+```curl
+curl -s https://raw.githubusercontent.com/nu11secur1ty/OPSEC-wazuh/master/updateOS.py | python3
+```
+
 ## BR
