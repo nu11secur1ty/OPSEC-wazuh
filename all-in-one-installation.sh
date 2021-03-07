@@ -426,8 +426,11 @@ checkInstallation() {
     echo $'\nDuring the installation of Elasticsearch the passwords for its user were generated. Please take note of them:'
     echo "$passwords"
     echo $'\nInstallation finished'
+    
     disableRepos
-    echo $'\nYou can access the web interface https://<kibana_ip>. The credentials are elastic:'$password''    
+    IP=$(hostname -I | cut -d' ' -f1)
+    echo "You can access the web interface https://$IP/>. The credentials are elastic: $password"
+    # echo $'\nYou can access the web interface https://<kibana_ip>. The credentials are elastic:'$password''    
     exit 0;
 
 }
