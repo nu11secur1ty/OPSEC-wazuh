@@ -44,4 +44,8 @@ bash cleankey.sh
 ```curl
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OPSEC-wazuh/master/updateOS.py | python3
 ```
+- - - Preparing Kibana for administration
+```bash
+sed -i 's/false/true/g' /usr/share/kibana/data/wazuh/config/wazuh.yml
+```
 ## BR
