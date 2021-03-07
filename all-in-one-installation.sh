@@ -9,6 +9,8 @@
 # Foundation.
 # https://documentation.wazuh.com/current/installation-guide/more-installation-alternatives/elastic-stack/all-in-one-deployment/unattended-installation.html
 # https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/elastic-stack/unattended-installation/all-in-one-installation.sh
+# IP=$(hostname -I | cut -d' ' -f1)
+# echo "You can access the web interface https://$IP/>. The credentials are elastic: $password"
 
 ## Check if system is based on yum or apt-get or zypper
 char="."
