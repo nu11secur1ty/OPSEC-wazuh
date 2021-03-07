@@ -15,7 +15,8 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/OPSEC-wazuh/master/needto
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OPSEC-wazuh/master/sakai-4.0.4.sh | bash
 # 4.1.1 - Stable
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OPSEC-wazuh/master/sakai-4.1.1-03.06.2021.sh | bash
-curl -so ~/all-in-one-installation.sh 
+# Latest
+curl -so ~/all-in-one-installation.sh https://raw.githubusercontent.com/nu11secur1ty/OPSEC-wazuh/master/all-in-one-installation.sh && bash ~/all-in-one-installation.sh
 ```
 - - - Get the source and configure from inside
 ```bash
