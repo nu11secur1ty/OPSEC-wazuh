@@ -1,6 +1,6 @@
 #!/bin/bash
-
-# Program to install Wazuh manager along Open Distro for Elasticsearch
+# 03.11.2021
+# Program to install OPSEC-Wazuh manager along Open Distro for Elasticsearch
 # Copyright (C) 2015-2021, Wazuh Inc.
 #
 # This program is a free software; you can redistribute it
@@ -358,7 +358,7 @@ installKibana() {
         eval "mkdir /usr/share/kibana/data ${debug}"
         eval "chown -R kibana:kibana /usr/share/kibana/ ${debug}"
         eval "cd /usr/share/kibana ${debug}"
-        eval "sudo -u kibana /usr/share/kibana/bin/kibana-plugin install https://packages.wazuh.com/4.x/ui/kibana/wazuh_kibana-4.1.1_7.10.2-1.zip ${debug}"
+        eval "sudo -u kibana /usr/share/kibana/bin/kibana-plugin install https://packages.wazuh.com/4.x/ui/kibana/wazuh_kibana-4.1.2_7.10.2-1.zip ${debug}"
         if [  "$?" != 0  ]; then
             echo "Error: Wazuh Kibana plugin could not be installed."
             exit 1;
@@ -428,11 +428,11 @@ checkInstallation() {
     echo $'\nDuring the installation of Elasticsearch the passwords for its user were generated. Please take note of them:'
     echo "$passwords"
     echo $'\nInstallation finished'
-    
     disableRepos
     IP=$(hostname -I | cut -d' ' -f1)
     echo "You can access the web interface https://$IP/>. The credentials are elastic: $password"
-    # echo $'\nYou can access the web interface https://<kibana_ip>. The credentials are elastic:'$password''    
+    
+    #echo $'\nYou can access the web interface https://<kibana_ip>. The credentials are elastic:'$password''    
     exit 0;
 
 }
