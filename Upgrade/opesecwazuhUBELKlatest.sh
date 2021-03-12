@@ -81,4 +81,45 @@ filebeat setup --index-management -E output.logstash.enabled=false
 # 3.12.x
 mkdir -p /usr/share/kibana/data/wazuh/config/
 cp /usr/share/kibana/optimize/wazuh/config/wazuh.yml /usr/share/kibana/data/wazuh/config/wazuh.yml
+sed -i 's/user/username/g' /usr/share/kibana/data/wazuh/config/wazuh.yml
+
+cd /usr/share/kibana/
+sudo -u kibana bin/kibana-plugin remove wazuh
+
+apt-get install kibana=7.10.2
+
+rm -rf /usr/share/kibana/optimize/bundles
+rm -f /usr/share/kibana/optimize/wazuh/config/wazuh-registry.json
+
+chown -R kibana:kibana /usr/share/kibana
+chown -R kibana:kibana /usr/share/kibana/plugins
+
+cd /usr/share/kibana/
+sudo -u kibana /usr/share/kibana/bin/kibana-plugin install https://packages.wazuh.com/4.x/ui/kibana/wazuh_kibana-4.1.2_7.10.2-1.zip
+
+sudo chown kibana:kibana /usr/share/kibana/data/wazuh/config/wazuh.yml
+sudo chmod 600 /usr/share/kibana/data/wazuh/config/wazuh.yml
+
+cat >> /etc/default/kibana << EOF
+NODE_OPTIONS="--max_old_space_size=2048"
+EOF
+
+setcap 'cap_net_bind_service=+ep' /usr/share/kibana/node/bin/node
+
+systemctl daemon-reload
+systemctl enable kibana
+systemctl start kibana
+
+echo "Elastic pass"
+read elastic
+curl 'https://$IP:5601/api/saved_objects/index-pattern/wazuh-alerts-3.x-*' -X DELETE  -H 'Content-Type: application/json' -H 'kbn-version: 7.10.2' -k -uelastic:$elastic
+
+# Disabling the repository
+
+sed -i "s/^deb/#deb/" /etc/apt/sources.list.d/elastic-7.x.list
+apt-get update
+echo "elasticsearch hold" | sudo dpkg --set-selections
+echo "filebeat hold" | sudo dpkg --set-selections
+echo "kibana hold" | sudo dpkg --set-selections
+
 
