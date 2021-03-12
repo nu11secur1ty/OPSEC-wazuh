@@ -42,12 +42,12 @@ systemctl daemon-reload
 systemctl enable elasticsearch
 systemctl start elasticsearch
 
-echo "Give the user name and password for nodes"
+echo "Credentials for nodes"
 read usern
 read passn
 curl -X GET "https://127.0.0.1:9200/_cat/nodes" -u $usern:$passn -k
 
-
+echo "Credentials for cluster"
 read userc
 read passc
 curl -X PUT "https://127.0.0.1:9200/_cluster/settings" -u $userc:$passc -k -H 'Content-Type: application/json' -d'
@@ -57,3 +57,7 @@ curl -X PUT "https://127.0.0.1:9200/_cluster/settings" -u $userc:$passc -k -H 'C
   }
 }
 '
+echo "Credentials for health"
+read userh
+read passh
+curl -X GET "https://127.0.0.1:9200/_cat/health?v" -u <username>:<password> -k
