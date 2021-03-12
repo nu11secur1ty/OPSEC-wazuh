@@ -35,6 +35,7 @@ echo "Give the user name and password sync"
 read user
 read pass
 curl -X POST "https://127.0.0.1:9200/_flush/synced" -u $user:$pass -k
+
 systemctl stop elasticsearch
 apt-get install elasticsearch=7.10.2
 systemctl daemon-reload
