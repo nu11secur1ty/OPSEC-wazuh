@@ -8,4 +8,8 @@ apt-get update
   apt-get install wazuh-manager
 
 # Disabling the Wazuh repository
+sed -i "s/^deb/#deb/" /etc/apt/sources.list.d/wazuh.list
+  apt-get update
+  echo "wazuh-manager hold" | sudo dpkg --set-selections
   
+# Upgrading Elastic Stack basic license
