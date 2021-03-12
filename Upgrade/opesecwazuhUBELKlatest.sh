@@ -61,3 +61,12 @@ echo "Credentials for health"
 read userh
 read passh
 curl -X GET "https://127.0.0.1:9200/_cat/health?v" -u <username>:<password> -k
+
+### Upgrading Filebeat
+apt-get install filebeat=7.10.2
+curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com/wazuh/wazuh/v4.1.2/extensions/elasticsearch/7.x/wazuh-template.json
+chmod go+r /etc/filebeat/wazuh-template.json
+curl -s https://packages.wazuh.com/4.x/filebeat/wazuh-filebeat-0.1.tar.gz | sudo tar -xvz -C /usr/share/filebeat/module
+
+IP=$(hostname -I | cut -d' ' -f1)
+sed -i 's/['http://YOUR_ELASTIC_SERVER_IP:9200']/['http://$IP:9200']' /etc/filebeat/filebeat.yml
