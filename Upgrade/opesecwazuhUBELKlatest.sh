@@ -70,3 +70,15 @@ curl -s https://packages.wazuh.com/4.x/filebeat/wazuh-filebeat-0.1.tar.gz | sudo
 
 IP=$(hostname -I | cut -d' ' -f1)
 sed -i 's/['http://YOUR_ELASTIC_SERVER_IP:9200']/['http://$IP:9200']' /etc/filebeat/filebeat.yml
+
+systemctl daemon-reload
+systemctl enable filebeat
+systemctl start filebeat
+
+filebeat setup --index-management -E output.logstash.enabled=false
+
+# Upgrading Kibana
+# 3.12.x
+mkdir -p /usr/share/kibana/data/wazuh/config/
+cp /usr/share/kibana/optimize/wazuh/config/wazuh.yml /usr/share/kibana/data/wazuh/config/wazuh.yml
+
