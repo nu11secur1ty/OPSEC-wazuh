@@ -31,7 +31,28 @@ curl -X PUT "https://127.0.0.1:9200/_cluster/settings"  -u <username>:<password>
   }
 }
 '
-echo "Give the user name and password"
+echo "Give the user name and password sync"
 read user
 read pass
 curl -X POST "https://127.0.0.1:9200/_flush/synced" -u $user:$pass -k
+systemctl stop elasticsearch
+apt-get install elasticsearch=7.10.2
+systemctl daemon-reload
+systemctl enable elasticsearch
+systemctl start elasticsearch
+
+echo "Give the user name and password for nodes"
+read usern
+read passn
+curl -X GET "https://127.0.0.1:9200/_cat/nodes" -u $usern:$passn -k
+
+
+read userc
+read passc
+curl -X PUT "https://127.0.0.1:9200/_cluster/settings" -u $userc:$passc -k -H 'Content-Type: application/json' -d'
+{
+  "persistent": {
+    "cluster.routing.allocation.enable": "all"
+  }
+}
+'
