@@ -13,3 +13,11 @@ sed -i "s/^deb/#deb/" /etc/apt/sources.list.d/wazuh.list
   echo "wazuh-manager hold" | sudo dpkg --set-selections
   
 # Upgrading Elastic Stack basic license
+# stop the services
+systemctl stop filebeat
+systemctl stop kibana
+  curl -s https://artifacts.elastic.co/GPG-KEY-elasticsearch | apt-key add -
+  echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | tee /etc/apt/sources.list.d/elastic-7.x.list
+  apt-get update
+  
+  
